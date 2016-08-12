@@ -1,12 +1,14 @@
 //Combine Sass particals
 
 //Base Sass styles
-@include "typography";
-
+@import "color";
+@import "fonts";
+@import "typography";
+@import "reset";
 
 //General page styles
 
 
 
 //Styles for partials
-@include "hero";
+@import "hero";

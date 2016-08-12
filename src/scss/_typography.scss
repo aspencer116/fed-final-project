@@ -1,0 +1,11 @@
+.h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: $brown-brand;
+  font-size: 3.375em;
+  text-align: center;
+}
+
+.h1--hero {
+  @extend .h1;
+  font-size: 3.75em;
+}
