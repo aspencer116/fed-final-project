@@ -1,12 +1,13 @@
 //Combine Sass particals
 
 //Base Sass styles
-@import "color";
-@import "fonts";
-@import "typography";
+@import "media";
 @import "reset";
+@import "fonts"; //loads fonts
 
-//General page styles
+//General styles
+@import "color";
+@import "typography";
 
 
 

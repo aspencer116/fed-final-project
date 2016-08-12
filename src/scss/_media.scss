@@ -1,0 +1,46 @@
+$phone-large-width: 25em; //400px
+$tablet-small-width: 40em; //640px
+$tablet-large-width: 47em; //752px
+$desktop-small-width: 60em; //960px;
+$desktop-width: 77em; //1200px
+$desktop-large-width: 95em; //1520px
+
+//Size that grid elements are contained at
+$contain: 75em; //1200px
+$contain-nav: 87.5em; //1400px
+
+@mixin phone-large {
+  @media (min-width: $phone-large-width) {
+    @content;
+  }
+}
+
+@mixin tablet-small {
+  @media (min-width: $tablet-small-width) {
+    @content;
+  }
+}
+
+@mixin tablet-large {
+  @media (min-width: $tablet-large-width) {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media (min-width: $desktop-small-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: $desktop-large-width) {
+    @content;
+  }
+}
