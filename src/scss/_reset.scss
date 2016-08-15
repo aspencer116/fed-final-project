@@ -2,3 +2,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+//allows div elements to "clear" floated pieces that are contained within
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  clear: both;
+  display: block;
+  content: '';
+}

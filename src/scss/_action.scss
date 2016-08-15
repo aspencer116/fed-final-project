@@ -1,0 +1,46 @@
+.action {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.action--link {
+  height: 2.5em;
+  width: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  //positioning without flexbox (older browsers)
+  display: block;
+  float: left;
+
+  //positioning using flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //content unique to this instance of action--link
+  background-color: $orange;
+  color: $brown-brand;
+}
+
+.action--link__partner {
+  @extend .action--link;
+  background-color: $brown-brand;
+  color: $brown-light;
+}
+
+.action--arrow {
+  fill: $orange;
+  margin-top: 2.5em;
+  position: absolute;
+  width: 24;
+  left: calc(25% - 12px);
+}
+
+.action--arrow__partner {
+  @extend .action--arrow;
+  fill: $brown-brand;
+  left: calc(75% - 12px);
+}
