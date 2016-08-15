@@ -1,14 +1,11 @@
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-
 	$(".parallax-one").css({
-		top: 250 + (scroll/250)
-	});
-});
-
-$(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-	$(".parallax-two").css({
-		top: 388 + (scroll/2)
+		bottom: -80 + (scroll/8)
+    //fill: black;
+    //     -ms-transform: translateY(80);
+    // -webkit-transform: translateY(80);
+    //         transform: translateY(80);
+    //transform: translateY(scroll)
 	});
 });
