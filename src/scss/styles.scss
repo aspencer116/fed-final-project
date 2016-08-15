@@ -9,8 +9,10 @@
 @import "color";
 @import "typography";
 
-
+//SVG styles
+@import "_svg--animals";
 
 //Styles for partials
 @import "hero";
 @import "action";
+@import "about";

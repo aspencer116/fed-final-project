@@ -1,19 +1,36 @@
-.h1 {
-  font-family: 'Bebas Neue', sans-serif;
+.type--h1 {
+  font-family: 'Bebas Neue', tahoma, arial, sans-serif;
   color: $brown-brand;
   font-size: 1.75em;
+  line-height: 1.125em;
   letter-spacing: 0.125em;
   text-align: center;
 }
 
-.h1--hero {
-  @extend .h1;
+.type--h1__hero {
+  @extend .type--h1;
   font-size: 2em;
   margin: 0;
   padding: 0;
 }
 
-.link {
+.type--h2 {
+  @extend .type--h1;
+  font-size: 1.5em;
+}
+
+.type--link {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
+  text-decoration: none;
+}
+
+.type--p {
+  font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
+  font-size: 1em;
+  color: $brown-brand;
+}
+
+.type--p__large {
+  @extend .type--p;
 }
