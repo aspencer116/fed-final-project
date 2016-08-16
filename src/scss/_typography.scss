@@ -5,6 +5,8 @@
   line-height: 1.125em;
   letter-spacing: 0.125em;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .type--h1__hero {
@@ -19,18 +21,50 @@
   font-size: 1.5em;
 }
 
+.type--h3 {
+  font-family: "Avenir Next Bold", "Avenir", helvetica, sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+  color: $brown-brand;
+  text-align: center;
+}
+
+.type--h3__product {
+  @extend .type--h3;
+  position: relative;
+  margin-top: 0.5em;
+  z-index: 2;
+}
+
 .type--link {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.type--link__more {
+  @extend .type--link;
+  text-align: center;
+  margin-top: 1.5em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .type--p {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
   color: $brown-brand;
+  margin: 0;
+  padding: 0;
 }
 
 .type--p__large {
   @extend .type--p;
+}
+
+.type--p__center {
+  @extend .type--p__large;
+  text-align: center;
 }

@@ -57,3 +57,31 @@
   bottom: -1em;
   left: 7.5%;
 }
+
+.lion--element {
+  fill: $green;
+  position: absolute;
+  z-index: -2;
+  width: 18px;
+  height: 15px;
+}
+
+#lion--element__1 {
+  left: 4.5%;
+  bottom: 8em; //positioning if javascript is not loaded
+}
+
+#lion--element__2 {
+  left: 9%;
+  bottom: 8em; //positioning if javascript is not loaded
+}
+
+#lion--element__3 {
+  left: 65%;
+  bottom: 8em; //positioning if javascript is not loaded
+}
+
+#lion--element__4 {
+  left: 80%;
+  bottom: 8em; //positioning if javascript is not loaded
+}
