@@ -44,7 +44,7 @@
 .product1--container__alt {
   @extend .product1--container;
   background-image: url('/images/');
-  background-image: url('/images/flashcards_hero.jpg');
+  background-image: url('/images/flashcards_product.jpg');
 }
 
 //display a yellow overlay on top of the image
@@ -69,6 +69,7 @@
 
 .product1--featuredImage {
   width: 60%;
+  max-width: 31.25em; //500px
   display: block;
   margin: 0 auto 0;
   position: relative;

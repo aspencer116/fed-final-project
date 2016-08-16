@@ -23,7 +23,4 @@ $(window).scroll(function() {
   });
 });
 
-
-$(".product1--container").click(function() {
-
-}
+//Product tile functionality
