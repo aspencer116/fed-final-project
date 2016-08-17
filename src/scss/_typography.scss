@@ -44,6 +44,13 @@
   z-index: 2;
 }
 
+.type--h4 {
+  font-family: 'Bebas Neue', tahoma, arial, sans-serif;
+  font-size: 1.125em;
+  letter-spacing: 0.15625em;
+  color: $brown-brand;
+}
+
 .type--link {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
@@ -60,12 +67,19 @@
   text-transform: uppercase;
 }
 
+.type--link__product {
+  @extend .type--link__more;
+  color: $white;
+  font-size: 0.875em;
+}
+
 .type--p {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
   color: $brown-brand;
   margin: 0;
   padding: 0;
+  font-weight: 400;
 }
 
 .type--p__large {
@@ -74,5 +88,10 @@
 
 .type--p__center {
   @extend .type--p__large;
+  text-align: center;
+}
+
+.type--p__reverse {
+  @extend .type--p__center;
   text-align: center;
 }
