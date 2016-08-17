@@ -5,11 +5,12 @@
 }
 
 .action--link {
-  height: 2.5em;
+  height: 2.75em;
   width: 50%;
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
 
   //positioning without flexbox (older browsers)
   display: block;
@@ -25,7 +26,7 @@
   color: $brown-brand;
 }
 
-.action--link__partner {
+.action--link__alt {
   @extend .action--link;
   background-color: $brown-brand;
   color: $brown-light;
@@ -33,14 +34,12 @@
 
 .action--arrow {
   fill: $orange;
-  margin-top: 1.7em;
+  top: 2.75em;
   position: absolute;
   width: 24;
-  left: calc(25% - 12px);
 }
 
-.action--arrow__partner {
+.action--arrow__alt {
   @extend .action--arrow;
   fill: $brown-brand;
-  left: calc(75% - 12px);
 }
