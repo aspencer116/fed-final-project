@@ -31,7 +31,7 @@
 
 .type--h3 {
   font-family: "Avenir Next Bold", "Avenir", helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0;
   color: $brown-brand;
   text-align: center;
@@ -39,6 +39,7 @@
 
 .type--h3__product {
   @extend .type--h3;
+  font-size: 1.5em;
   position: relative;
   margin-top: 0.5em;
   z-index: 2;
@@ -47,6 +48,7 @@
 .type--h4 {
   font-family: 'Bebas Neue', tahoma, arial, sans-serif;
   font-size: 1.125em;
+  margin: 0;
   letter-spacing: 0.15625em;
   color: $brown-brand;
 }
@@ -76,6 +78,7 @@
 .type--p {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
+  line-height: 1.75em;
   color: $brown-brand;
   margin: 0;
   padding: 0;
