@@ -1,0 +1,75 @@
+.product-alt {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+  border-top: solid 4px $brown-light;
+  border-bottom: solid 4px $brown-light;
+
+  &--button {
+    display: block;
+    max-width: 8em;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    margin-top: 0.75em;
+    background-color: $orange;
+
+    @media (min-width: $tablet-large-width) {
+      &:hover {
+        background-color: darken($orange, 10%);
+      }
+
+      &:active {
+        background-color: darken($orange, 20%);
+      }
+    }
+  }
+
+  &--container {
+    width: 80%;
+    margin: 1.5em auto;
+    padding: 0;
+
+    @media (min-width: $tablet-small-width) {
+      width: 60%;
+    }
+
+    @media (min-width: $desktop-small-width) {
+      width: 90%;
+
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--image {
+    width: 100%;
+  }
+
+  &--imageBack {
+    margin-top: 1.5em;
+    background-color: $green-brand;
+  }
+
+  &--imageBack__alt {
+    @extend .product-alt--imageBack;
+    background-color: $blue;
+  }
+
+  &--item {
+    margin: 2em 0;
+    display: block;
+
+    @media screen and (min-width: $desktop-small-width) {
+      width: 30%;
+    }
+  }
+
+  &--text {
+    @extend .type--p;
+    height: 6.25em; //patch fix. Need to use flexbox
+  }
+
+  &--title {
+    margin-bottom: 0.5em;
+  }
+}

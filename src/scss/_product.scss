@@ -1,0 +1,142 @@
+.product {
+  width: 90%;
+  margin: 2em auto;
+  padding: 0;
+
+  @media (min-width: $phone-large-width) {
+    width: 80%;
+  }
+
+  @media (min-width: $tablet-large-width) {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+  }
+
+  &__3up {
+    @extend .product;
+    margin-bottom: 2em;
+
+    @media (min-width: $tablet-large-width) {
+      width: 60%;
+      display: block;
+    }
+
+    @media (min-width: $desktop-small-width) {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4em;
+    }
+
+  }
+
+  &--arrow {
+    position: absolute;
+    margin-left: 172px;
+    margin-top: -20px;
+    fill: darken($green-brand, 10%);
+
+    display: none; //hide on mobile size
+  }
+
+  &--arrow__alt {
+    @extend .product--arrow;
+    fill: darken($blue, 10%);
+  }
+
+  &--check {
+    display: none;
+  }
+
+  &--check:checked  {
+    height: 10em;
+  }
+
+  &--container {
+    height: 20em;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: $white;
+    background-image: url('/images/wallPuzzle_product.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--container__alt {
+    @extend .product--container;
+    background-image: url('/images/');
+    background-image: url('/images/flashcards_product.jpg');
+  }
+
+  //display a yellow overlay on top of the image
+  &--container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: $green-transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  &--container__alt:before {
+    @extend .product--container:before;
+    background-color: $blue-transparent;
+  }
+
+  &--container:hover:before {
+    background-color: transparent;
+  }
+
+  &--featuredImage {
+    width: 60%;
+    max-width: 31.25em; //500px
+    display: block;
+    margin: 0 auto 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  &--item {
+    list-style: none;
+    margin: 0 auto 1em;
+
+    @media (min-width: $tablet-large-width) {
+      width: 47.5%;
+      display: block;
+    }
+  }
+
+  &--item__3up {
+    list-style: none;
+    margin: 0 auto 1em;
+
+    @media (min-width: $desktop-small-width) {
+      width: 30%;
+    }
+  }
+
+  &--learn {
+    height: 5em;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    border: solid 6px darken($green-brand, 10%);
+    background-color: $green-brand;
+  }
+
+  &--learn__alt {
+    @extend .product--learn;
+    border: solid 6px darken($blue, 10%);
+    background-color: $blue;
+  }
+}

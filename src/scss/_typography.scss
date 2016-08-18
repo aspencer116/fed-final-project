@@ -70,19 +70,24 @@
 }
 
 .type--link__product {
-  @extend .type--link__more;
+  @extend .type--link;
   color: $white;
   font-size: 0.875em;
+  text-align: center;
 }
 
 .type--p {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
-  line-height: 1.75em;
+  line-height: 1.5em;
   color: $brown-brand;
   margin: 0;
   padding: 0;
   font-weight: 400;
+
+  @media screen and (min-width: $phone-large-width) {
+    line-height: 1.75em;
+  }
 }
 
 .type--p__large {
