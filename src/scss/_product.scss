@@ -16,7 +16,6 @@
 
   &__3up {
     @extend .product;
-    margin-bottom: 2em;
 
     @media (min-width: $tablet-large-width) {
       width: 60%;
@@ -27,7 +26,6 @@
       width: 90%;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 4em;
     }
 
   }

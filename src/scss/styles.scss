@@ -4,6 +4,7 @@
 @import "media";
 @import "reset";
 @import "fonts"; //loads fonts
+@import "mixin"; //mixin file for background images and other repeated patterns
 
 //General styles
 @import "color";
@@ -19,3 +20,4 @@
 @import "products_container";
 @import "product";
 @import "product_alt";
+@import "proof";

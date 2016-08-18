@@ -53,6 +53,11 @@
   color: $brown-brand;
 }
 
+.type--h4__center {
+  @extend .type--h4;
+  text-align: center;
+}
+
 .type--link {
   font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
@@ -100,6 +105,6 @@
 }
 
 .type--p__reverse {
-  @extend .type--p__center;
-  text-align: center;
+  @extend .type--p;
+  color: $white;
 }

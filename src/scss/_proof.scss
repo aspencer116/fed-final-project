@@ -1,0 +1,49 @@
+.proof {
+  @include background-pattern;
+  padding: 3em 0;
+
+  &--featured {
+    width: 90%;
+    padding: 2em 0 0;
+    margin: 0 auto;
+  }
+
+  &--logo {
+    display: block;
+    margin: 2em auto;
+  }
+
+  &--quote {
+    @extend .type--p__reverse;
+    background-color: $brown-brand;
+    box-sizing: border-box;
+    padding: 1.5em 5%;
+    border-top: 0.25em solid $green;
+    border-bottom: 0.25em solid $green;
+    text-indent: -0.425em;
+  }
+
+  &--text {
+    @extend .type--p;
+    margin-top: 0.5em;
+  }
+
+  &--text-block {
+    box-sizing: border-box;
+    padding: 0;
+    width: 90%;
+    margin: 1.5em auto;
+  }
+}
+
+#proof--logo__how {
+  width: 25%;
+}
+
+#proof--logo__scholastic {
+  width: 70%;
+}
+
+#proof--logo__nyt {
+  width: 35%;
+}

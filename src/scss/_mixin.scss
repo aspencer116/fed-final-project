@@ -1,0 +1,15 @@
+@mixin background-pattern {
+  background-color: $white-tint; //backup color for when images fail to load
+  background-image: url("/images/lightTexture.png");
+  background-size: 12.5em; //200px wide. Constrain to make the pattern smaller on smaller screens
+  position: relative; //position the backround behind other elements
+  z-index: -1;
+
+  @media (min-width: $tablet-large-width) {
+    background-size: 16em;
+  }
+
+  @media (min-width: $desktop-large-width) {
+    background-size: 20em;
+  }
+}
