@@ -1,3 +1,6 @@
+var test = $(window).height();
+console.log('height: ' + test);
+
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   var scroll_1 = scroll/8;
@@ -24,3 +27,37 @@ $(window).scroll(function() {
 });
 
 //Product tile functionality
+
+
+//Sticky nav
+$(document).ready(function(){
+  $(window).resize(function(){
+
+    // Variables
+    var windowHeight = $(window).height();
+    console.log(windowHeight);
+    var toggle = .85 * windowHeight;
+
+    // When the document is scrolled 85%, toggle the classes
+    // Does not work in iOS 7 or below
+    // Hasn't been tested in iOS 8
+    $(document).scroll(function(){
+
+      // Store the document scroll function in a variable
+      var y = $(this).scrollTop();
+
+      // If the document is scrolled 85%
+      if( y > toggle) {
+
+        // Add the "sticky" class
+        $('.action').addClass('action--top');
+      } else {
+        // Else remove it.
+        $('.action').removeClass('action--top');
+      }
+    });
+
+  // Call it on resize.
+  }).resize();
+
+}); // jQuery

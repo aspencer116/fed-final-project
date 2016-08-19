@@ -2,44 +2,82 @@
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.action--link {
   height: 2.75em;
-  width: 50%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-
-  //positioning without flexbox (older browsers)
-  display: block;
-  float: left;
-
-  //positioning using flexbox
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  //content unique to this instance of action--link
-  background-color: $orange;
-  color: $brown-brand;
-}
-
-.action--link__alt {
-  @extend .action--link;
-  background-color: $brown-brand;
-  color: $brown-light;
-}
-
-.action--arrow {
-  fill: $orange;
-  top: 2.75em;
   position: absolute;
-  width: 24;
-}
 
-.action--arrow__alt {
-  @extend .action--arrow;
-  fill: $brown-brand;
+  &--link {
+    height: 2.75em;
+    width: 50%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 0.25s;
+    transition-timing-function: ease-in-out;
+
+    //positioning without flexbox (older browsers)
+    display: block;
+    float: left;
+
+    //positioning using flexbox
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    //content unique to this instance of action--link
+    background-color: $orange;
+    color: $brown-brand;
+
+    @media (min-width: $desktop-small-width) {
+      &:hover {
+        height: 3.5em;
+        background-color: lighten($orange, 5%);
+      }
+
+      &:hover svg {
+        top: 3.5em;
+        fill: lighten($orange, 5%);
+      }
+    }
+  }
+
+  &--link__alt {
+    @extend .action--link;
+    background-color: $brown-brand;
+    color: $brown-light;
+
+    @media (min-width: $desktop-small-width) {
+      &:hover {
+        height: 3.5em;
+        background-color: darken($brown-brand, 5%);
+      }
+
+      &:hover svg {
+        top: 3.5em;
+        fill: darken($brown-brand, 5%);
+      }
+    }
+  }
+
+  &--arrow {
+    fill: $orange;
+    width: 1.5em;
+    position: absolute;
+    top: 2.75em;
+    left: calc(50% - 0.75em);
+    transition: all 0.25s;
+    transition-timing-function: ease-in-out;
+  }
+
+  &--arrow__alt {
+    @extend .action--arrow;
+    fill: $brown-brand;
+  }
+
+  &--top {
+    //fix the nav bar to the top of the page after javascript trigger
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
 }
