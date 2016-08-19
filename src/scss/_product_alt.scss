@@ -5,25 +5,6 @@
   border-top: solid 4px $brown-light;
   border-bottom: solid 4px $brown-light;
 
-  &--button {
-    display: block;
-    max-width: 8em;
-    box-sizing: border-box;
-    padding: 0.5em 1em;
-    margin-top: 0.75em;
-    background-color: $orange;
-
-    @media (min-width: $tablet-large-width) {
-      &:hover {
-        background-color: darken($orange, 10%);
-      }
-
-      &:active {
-        background-color: darken($orange, 20%);
-      }
-    }
-  }
-
   &--container {
     width: 80%;
     margin: 1.5em auto;

@@ -1,0 +1,115 @@
+.sell {
+  background-color: $brown-light;
+  background-image: url(/images/wood_texture.png);
+  padding: 3em 0;
+
+  &--form {
+    width: 90%;
+    max-width: 37.5em; //600px
+    margin: 0 auto;
+
+    @media (min-width: $tablet-small-width) {
+      padding: 2em 0;
+    }
+  }
+
+  &--header {
+    @extend .type--section-head;
+    width: 90%;
+    margin: 0 auto 1em;
+  }
+
+  &--input {
+    @extend .type--p__reverse;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 100%;
+
+    background-color: lighten($green-dark, 20%);
+    color: $brown-brand;
+    border: 0.25em solid $green-dark;
+    -webkit-border-radius: none; //remove default radious on iOS
+    -webkit-appearance: none;
+
+    &:focus {
+      background-color: $white;
+      outline: none;
+    }
+
+    @media (min-width: $tablet-small-width) {
+      float: left;
+      width: 80%;
+    }
+  }
+
+  //Style the placeholder text in the form input areas
+  &--input::-webkit-input-placeholder {
+    color: $white;
+  }
+
+  &--input:-moz-placeholder { /* Firefox 18- */
+     color: $white;
+  }
+
+  &--input::-moz-placeholder {  /* Firefox 19+ */
+     color: $white;
+  }
+
+  &--input:-ms-input-placeholder {
+     color: $white;
+  }
+
+  &--input__alt {
+    @extend .sell--input;
+    border-color: $blue-dark;
+    background-color: lighten($blue-dark, 20%);
+  }
+
+  &--input__text {
+    @extend .sell--input;
+
+    @media (min-width: $tablet-small-width) {
+      width: 100%;
+    }
+  }
+
+  &--label {
+    @extend .type--p__reverse;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.25em;
+    width: 100%;
+
+    background-color: $green-dark;
+    border: 0.25em solid $green-dark;
+    border-radius: none; //remove default radious on iOS
+
+    @media (min-width: $tablet-small-width) {
+      padding: 0.5em;
+      float: left;
+      width: 20%;
+    }
+  }
+
+  &--label__alt {
+    @extend .sell--label;
+    background-color: $blue-dark;
+    border-color: $blue-dark;
+  }
+
+  &--submit {
+    @extend .button;
+    float: right;
+    margin-top: 0;
+    padding: 0.75em 2em;
+  }
+
+  &--type {
+    @extend .type--p__large;
+    width: 90%;
+    margin: 0 auto 1em;
+  }
+}

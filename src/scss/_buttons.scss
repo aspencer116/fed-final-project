@@ -1,0 +1,20 @@
+.button {
+  @extend .type--link__product;
+  display: block;
+  max-width: 8em;
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  margin-top: 0.75em;
+  background-color: $orange;
+  border: none;
+
+  @media (min-width: $tablet-large-width) {
+    &:hover {
+      background-color: darken($orange, 10%);
+    }
+
+    &:active {
+      background-color: darken($orange, 20%);
+    }
+  }
+}
