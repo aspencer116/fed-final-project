@@ -2,7 +2,6 @@
 
 //Base Sass styles
 @import "media";
-@import "reset";
 @import "fonts"; //loads fonts
 @import "mixin"; //mixin file for background images and other repeated patterns
 
@@ -25,3 +24,6 @@
 @import "buy";
 @import "sell";
 @import "footer";
+
+//Utility classes
+@import "utility";

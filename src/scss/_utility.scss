@@ -1,0 +1,33 @@
+//reset the body margin and padding
+body {
+  margin: 0;
+  padding: 0;
+}
+
+//style a backround for the page which will allow for a replicated fixed position
+.u-background {
+  background-color: $brown-brand;
+  background-image: url("/images/allAnimals_960.jpg");
+  background-size: 100%;
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+
+  @media (min-width: $desktop-small-width) {
+    background-size: 960px;
+  }
+}
+
+
+//allows div elements to "clear" floated pieces that are contained within
+.u-clearfix {
+  clear: both;
+
+  &:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
