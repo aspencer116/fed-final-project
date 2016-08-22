@@ -1,6 +1,3 @@
-var test = $(window).height();
-console.log('height: ' + test);
-
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
   var scroll_1 = scroll/8;
@@ -57,7 +54,7 @@ $(document).ready(function(){
       }
     });
 
-  // Call it on resize.
+  // Call it on resize to ensure the vh gets loaded correctly
   }).resize();
 
 }); // jQuery
