@@ -1,11 +1,7 @@
 .buy {
   background-color: $orange;
   background: linear-gradient(to bottom right, #DD8225, #C76000);
-  padding: 5em 0;
-
-  @media (min-width: $desktop-small-width) {
-      padding: 7em 0;
-  }
+  @include section-padding;
 
   &--type {
     @extend .type--p__reverse;

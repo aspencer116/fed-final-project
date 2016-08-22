@@ -1,7 +1,7 @@
 .sell {
   background-color: $brown-light;
   background-image: url(/images/wood_texture.png);
-  padding: 5em 0;
+  @include section-padding;
 
   &--form {
     width: 90%;
@@ -105,11 +105,19 @@
     float: right;
     margin-top: 0;
     padding: 0.75em 2em;
+
+    @media (min-width: $desktop-width) {
+      font-size: 1.25em;
+    }
   }
 
   &--type {
     @extend .type--p__large;
     width: 90%;
     margin: 0 auto 1em;
+
+    @media (min-width: $desktop-width) {
+      width: 60%;
+    }
   }
 }

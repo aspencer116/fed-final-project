@@ -4,8 +4,8 @@ body {
   padding: 0;
 }
 
-//style a backround for the page which will allow for a replicated fixed position
-.u-background {
+//for backround grid of characters
+.background {
   background-color: $brown-brand;
   background-image: url("/images/allAnimals_960.jpg");
   background-size: 100%;
