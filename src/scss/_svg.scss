@@ -1,0 +1,114 @@
+.c-AMElogo__color {
+  display: block;
+  max-width: 12.5em;
+  margin: 0 auto 1.5em;
+
+  @media screen and (min-width: $bp-c) {
+    width: 14em;
+  }
+
+  @media screen and (min-width: $bp-e) {
+    width: 18em;
+  }
+}
+
+.c-lion{
+  display: none;
+
+  @media (min-width: $bp-b) {
+    //display: block;
+    width: 200px;
+    position: absolute;
+    bottom: 2em;
+    left: 5%;
+  }
+}
+
+#c-lion__eyes {
+  -webkit-animation: c-lion__eyes 6s infinite ease-in-out;
+          animation: c-lion__eyes 6s infinite ease-in-out;
+}
+
+#c-lion__lids {
+  -webkit-animation: c-lion__lids 14.5s infinite ease-in-out;
+          animation: c-lion__lids 14.5s infinite ease-in-out;
+}
+
+#c-lion__mouth {
+  -webkit-animation: c-lion__mouth 14.5s infinite ease-in-out;
+          animation: c-lion__mouth 14.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes c-lion__eyes {
+  1% {
+    opacity: 0;
+  }
+
+  0%, 2%, 100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes c-lion__lids {
+  10%, 15% {
+    transform: translateY(-10px);
+  }
+
+  0%, 30% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes c-lion__mouth {
+  10%, 15% {
+    transform: translateY(60px);
+  }
+
+  0%, 30% {
+    transform: translateY(0px);
+  }
+}
+
+.c-lion__back {
+  display: none;
+
+  @media (min-width: $bp-b) {
+    fill: $green;
+    position: absolute;
+    z-index: -2;
+    bottom: -1em;
+    left: 7.5%;
+  }
+}
+
+.c-lion__element {
+  display: none;
+
+  @media (min-width: $bp-b) {
+    fill: $green;
+    position: absolute;
+    z-index: -2;
+    width: 1.125em;
+    height: 0.9375em;
+  }
+}
+
+#c-lion__element--1 {
+  left: 4.5%;
+  bottom: 8em; //positioning if javascript is not loaded
+}
+
+#c-lion__element--2 {
+  left: 9%;
+  bottom: 8em; //positioning if javascript is not loaded
+}
+
+#c-lion__element--3 {
+  left: 65%;
+  bottom: 8em; //positioning if javascript is not loaded
+}
+
+#c-lion__element--4 {
+  left: 80%;
+  bottom: 8em; //positioning if javascript is not loaded
+}

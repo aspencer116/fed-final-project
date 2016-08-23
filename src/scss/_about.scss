@@ -1,45 +1,38 @@
-.about {
+.c-about {
   @include background-pattern;
   width: 100%;
   box-sizing: border-box;
   margin: 0 0 10em; //bottom here margin to allow for the fixed image to show
   padding: 6em 0 3em;
 
-  @media (min-width: $tablet-small-width) {
+  @media (min-width: $bp-b) {
     //height: 34em; //to allow space for the svg animals
     margin-bottom: 16em;
   }
 
-  @media (min-width: $desktop-small-width) {
+  @media (min-width: $bp-d) {
     margin-bottom: 20em;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $bp-e) {
     margin-bottom: 24em;
     padding: 10em 0 5em;
   }
 
-  &--allAnimals {
-    width: 100%;
-    position: fixed;  //fixed positioning turned off
-    bottom: 0;
-    z-index: -100;
-  }
-
-  &--header {
-    @extend .type--section-head;
+  &__header {
+    @extend .type__section-head;
     width: 80%;
     margin: 0 auto;
   }
 
-  &--text {
-    @extend .type--p__large;
+  &__text {
+    @extend .type__p--large;
     text-align: center;
     width: 80%;
     margin: 1.5em auto 0;
   }
 
-  &--background {
+  &__background {
     background-image: url("/images/AllAnimals.jpg");
   }
 }

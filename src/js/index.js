@@ -6,16 +6,16 @@ $(window).scroll(function() {
 	$(".parallax-one").css({
 		bottom: -80 + (scroll_1)
 	});
-  $("#lion--element__1").css({
+  $("#c-lion__element--1").css({
 		bottom: 30 + (scroll_2)
   });
-  $("#lion--element__2").css({
+  $("#c-lion__element--2").css({
 		bottom: -10 + (scroll_2)
   });
-  $("#lion--element__3").css({
+  $("#c-lion__element--3").css({
 		bottom: -50 + (scroll_2)
   });
-  $("#lion--element__4").css({
+  $("#c-lion__element--4").css({
 		bottom: -120 + (scroll_2)
   });
 });
@@ -44,10 +44,10 @@ $(document).ready(function(){
       if( y > toggle) {
 
         // Add the "sticky" class
-        $('.action').addClass('action--top');
+        $('.c-action').addClass('c-action__top');
       } else {
         // Else remove it.
-        $('.action').removeClass('action--top');
+        $('.c-action').removeClass('c-action__top');
       }
     });
 

@@ -1,14 +1,14 @@
-.footer {
+.c-footer {
   background-color: $brown-med;
   padding: 5em 0 2em;
 
-  &--text {
-    @extend .type--p;
+  &__text {
+    @extend .type__p;
     font-size: 0.75em;
     text-align: center;
   }
 
-  &--link {
+  &__link {
     color: inherit;
     font-weight: 700;
   }

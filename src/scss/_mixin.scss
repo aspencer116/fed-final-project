@@ -6,11 +6,11 @@
   position: relative; //position the backround behind other elements
   z-index: -1;
 
-  @media (min-width: $tablet-large-width) {
+  @media (min-width: $bp-c) {
     background-size: 16em;
   }
 
-  @media (min-width: $desktop-large-width) {
+  @media (min-width: $bp-f) {
     background-size: 20em;
   }
 }
@@ -19,11 +19,11 @@
 @mixin section-padding {
   padding: 3em 0;
 
-  @media (min-width: $tablet-small-width) {
+  @media (min-width: $bp-b) {
     padding: 5em 0;
   }
 
-  @media (min-width: $desktop-large-width) {
+  @media (min-width: $bp-f) {
     padding: 8em 0;
   }
 }

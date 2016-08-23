@@ -1,136 +1,136 @@
-.type--hero {
-  font-family: 'Bebas Neue', tahoma, arial, sans-serif;
-  color: $brown-brand;
-  font-size: 1.5em;
-  line-height: 1.125em;
-  letter-spacing: 0.125em;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-
-  @media screen and (min-width: $tablet-small-width) {
-    font-size: 2em;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: 3em;
-  }
-}
-
-.type--link {
-  font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
-  font-size: 1em;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-
-  @media (min-width: $desktop-width) {
-    font-size: 1.25em;
-  }
-}
-
-.type--link__more {
-  @extend .type--link;
-  text-align: center;
-  margin-top: 1.5em;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-
-  @media (min-width: $desktop-width) {
-    font-size: 1em;
-  }
-}
-
-.type--link__product {
-  @extend .type--link;
-  color: $white;
-  font-size: 0.875em;
-  text-align: center;
-}
-
-.type--product__head {
-  font-family: "Avenir Next Bold", "Avenir", helvetica, sans-serif;
-  font-size: 2em;
-  margin: 0;
-  color: $brown-brand;
-  text-align: center;
-}
-
-.type--product {
-  @extend .type--product__head;
-  font-size: 1.5em;
-  position: relative;
-  margin-top: 0.5em;
-
-  @media (min-width: $desktop-width) {
-    font-size: 2em;
-  }
-
-
-}
-
-.type--p {
-  font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  color: $brown-brand;
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-
-  @media screen and (min-width: $phone-large-width) {
-    line-height: 1.75em;
-  }
-}
-
-.type--p__large {
-  @extend .type--p;
-
-  @media (min-width: $desktop-width) {
+.type {
+  &__hero {
+    font-family: 'Bebas Neue', tahoma, arial, sans-serif;
+    color: $brown-brand;
     font-size: 1.5em;
-    line-height: 1.875em;
+    line-height: 1.125em;
+    letter-spacing: 0.125em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: $bp-b) {
+      font-size: 2em;
+    }
+
+    @media screen and (min-width: $bp-e) {
+      font-size: 3em;
+    }
   }
-}
 
-.type--p__center {
-  @extend .type--p__large;
-  text-align: center;
-}
+  &__link {
+    font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 
-.type--p__reverse {
-  @extend .type--p;
-  color: $white;
-
-  @media (min-width: $desktop-width) {
-    font-size: 1.25em;
+    @media (min-width: $bp-e) {
+      font-size: 1.25em;
+    }
   }
-}
 
-.type--section-head {
-  @extend .type--hero;
-  font-size: 1.5em;
-  letter-spacing: 0.0625em;
+  &__link--more {
+    @extend .type__link;
+    text-align: center;
+    margin-top: 1.5em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
 
-  @media screen and (min-width: $tablet-small-width) {
+    @media (min-width: $bp-e) {
+      font-size: 1em;
+    }
+  }
+
+  &__link--product {
+    @extend .type__link;
+    color: $white;
+    font-size: 0.875em;
+    text-align: center;
+  }
+
+  &__product--head {
+    font-family: "Avenir Next Bold", "Avenir", helvetica, sans-serif;
     font-size: 2em;
+    margin: 0;
+    color: $brown-brand;
+    text-align: center;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    font-size: 3em;
+  &__product {
+    @extend .type__product--head;
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 0.5em;
+
+    @media (min-width: $bp-e) {
+      font-size: 2em;
+    }
   }
-}
 
-.type--sub-section {
-  font-family: 'Bebas Neue', tahoma, arial, sans-serif;
-  font-size: 1.125em;
-  margin: 0;
-  letter-spacing: 0.15625em;
-  color: $brown-brand;
-}
+  &__p {
+    font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: $brown-brand;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
 
-.type--sub-section__center {
-  @extend .type--sub-section;
-  text-align: center;
-  display: block;
-  width: 100%;
+    @media screen and (min-width: $bp-a) {
+      line-height: 1.75em;
+    }
+  }
+
+  &__p--large {
+    @extend .type__p;
+
+    @media (min-width: $bp-e) {
+      font-size: 1.5em;
+      line-height: 1.875em;
+    }
+  }
+
+  &__p--center {
+    @extend .type__p--large;
+    text-align: center;
+  }
+
+  &__p--reverse {
+    @extend .type__p;
+    color: $white;
+
+    @media (min-width: $bp-e) {
+      font-size: 1.25em;
+    }
+  }
+
+  &__section-head {
+    @extend .type__hero;
+    font-size: 1.5em;
+    letter-spacing: 0.0625em;
+
+    @media screen and (min-width: $bp-b) {
+      font-size: 2em;
+    }
+
+    @media screen and (min-width: $bp-e) {
+      font-size: 3em;
+    }
+  }
+
+  &__sub-section {
+    font-family: 'Bebas Neue', tahoma, arial, sans-serif;
+    font-size: 1.125em;
+    margin: 0;
+    letter-spacing: 0.15625em;
+    color: $brown-brand;
+  }
+
+  &__sub-section--center {
+    @extend .type__sub-section;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
 }

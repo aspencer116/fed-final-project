@@ -1,13 +1,13 @@
-.product {
+.c-product {
   width: 90%;
   margin: 2em auto;
   padding: 0;
 
-  @media (min-width: $phone-large-width) {
+  @media (min-width: $bp-a) {
     width: 80%;
   }
 
-  @media (min-width: $tablet-large-width) {
+  @media (min-width: $bp-c) {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -15,14 +15,14 @@
   }
 
   &__3up {
-    @extend .product;
+    @extend .c-product;
 
-    @media (min-width: $tablet-large-width) {
+    @media (min-width: $bp-c) {
       width: 60%;
       display: block;
     }
 
-    @media (min-width: $desktop-small-width) {
+    @media (min-width: $bp-d) {
       width: 90%;
       display: flex;
       justify-content: space-between;
@@ -30,7 +30,7 @@
 
   }
 
-  &--arrow {
+  &__arrow {
     position: absolute;
     margin-left: 172px;
     margin-top: -20px;
@@ -39,20 +39,20 @@
     display: none; //hide on mobile size
   }
 
-  &--arrow__alt {
-    @extend .product--arrow;
+  &__arrow--alt {
+    @extend .c-product__arrow;
     fill: darken($blue, 10%);
   }
 
-  &--check {
+  &__check {
     display: none;
   }
 
-  &--check:checked  {
+  &__check:checked  {
     height: 10em;
   }
 
-  &--container {
+  &__container {
     height: 20em;
     box-sizing: border-box;
     margin: 0 auto;
@@ -67,35 +67,35 @@
     justify-content: center;
   }
 
-  &--container__alt {
-    @extend .product--container;
+  &__container--alt {
+    @extend .c-product__container;
     background-image: url('/images/');
     background-image: url('/images/flashcards_product.jpg');
   }
 
   //display a yellow overlay on top of the image
-  &--container:before {
+  &__container:before {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
-    background-color: $green-transparent;
+    background-color: rgba($green-brand, 0.85);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
   }
 
-  &--container__alt:before {
-    @extend .product--container:before;
-    background-color: $blue-transparent;
+  &__container--alt:before {
+    @extend .c-product__container:before;
+    background-color: rgba($blue, 0.85);
   }
 
-  &--container:hover:before {
+  &__container:hover:before {
     background-color: transparent;
   }
 
-  &--featuredImage {
+  &__featuredImage {
     width: 60%;
     max-width: 31.25em; //500px
     display: block;
@@ -104,26 +104,26 @@
     z-index: 2;
   }
 
-  &--item {
+  &__item {
     list-style: none;
     margin: 0 auto 1em;
 
-    @media (min-width: $tablet-large-width) {
+    @media (min-width: $bp-c) {
       width: 47.5%;
       display: block;
     }
   }
 
-  &--item__3up {
+  &__item__3up {
     list-style: none;
     margin: 0 auto 1em;
 
-    @media (min-width: $desktop-small-width) {
+    @media (min-width: $bp-d) {
       width: 30%;
     }
   }
 
-  &--learn {
+  &__learn {
     height: 5em;
     margin: 0 auto;
     display: block;
@@ -132,8 +132,8 @@
     background-color: $green-brand;
   }
 
-  &--learn__alt {
-    @extend .product--learn;
+  &__learn--alt {
+    @extend .c-product__learn;
     border: solid 6px darken($blue, 10%);
     background-color: $blue;
   }

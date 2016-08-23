@@ -1,13 +1,13 @@
-.products {
+.c-products {
   background-color: $white-tint;
   padding-bottom: 2em;
-}
 
-.products--header {
-  padding: 3em 0; //padding on the top
-  background-color: $brown-light;
-}
+  &__header {
+    padding: 3em 0; //padding on the top
+    background-color: $brown-light;
+  }
 
-.products--hero {
-  width: 100%;
+  &__hero {
+    width: 100%;
+  }
 }

@@ -1,5 +1,5 @@
 .button {
-  @extend .type--link__product;
+  @extend .type__link--product;
   display: block;
   max-width: 8em;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   background-color: $orange;
   border: none;
 
-  @media (min-width: $tablet-large-width) {
+  @media (min-width: $bp-c) {
     &:hover {
       background-color: darken($orange, 10%);
     }

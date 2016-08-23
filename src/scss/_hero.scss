@@ -1,4 +1,4 @@
-.hero {
+.c-hero {
   background-color: $brown-light;
   background-image: url(/images/playingWithToys_products.jpg);
   background-repeat: no-repeat;
@@ -11,52 +11,37 @@
   position: relative;
 
   //use flexbox to center the content within the hero section
-  @media screen and (min-width: $tablet-small-width) {
+  @media screen and (min-width: $bp-b) {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-}
 
-.hero--container {
-  display: block;
-  width: 100%;
-  padding: 2em;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  bottom: 0;
+  &__container {
+    display: block;
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0;
 
-  @media screen and (min-width: $phone-large-width) {
-    padding: 2em 3.5em;
+    @media screen and (min-width: $bp-a) {
+      padding: 2em 3.5em;
 
-  }
+    }
 
-  @media screen and (min-width: $tablet-small-width) {
-    width: 80%;
-    position: relative;
-  }
+    @media screen and (min-width: $bp-b) {
+      width: 80%;
+      position: relative;
+    }
 
-  @media screen and (min-width: $tablet-large-width) {
-    padding: 3em 8em;
-  }
+    @media screen and (min-width: $bp-c) {
+      padding: 3em 8em;
+    }
 
-  @media screen and (min-width: $desktop-small-width) {
-    width: 60%;
-  }
-}
-
-.AMElogo--color {
-  display: block;
-  max-width: 12.5em;
-  margin: 0 auto 1.5em;
-
-  @media screen and (min-width: $tablet-large-width) {
-    width: 14em;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    width: 18em;
-
+    @media screen and (min-width: $bp-d) {
+      width: 60%;
+    }
   }
 }

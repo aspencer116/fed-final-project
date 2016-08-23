@@ -1,21 +1,21 @@
-.buy {
+.c-buy {
   background-color: $orange;
   background: linear-gradient(to bottom right, #DD8225, #C76000);
   @include section-padding;
 
-  &--type {
-    @extend .type--p__reverse;
+  &__type {
+    @extend .type__p--reverse;
     text-align: center;
     margin: 1em auto 2em;
     width: 90%;
 
-    @media (min-width: $tablet-small-width) {
+    @media (min-width: $bp-b) {
         width: 70%;
     }
   }
 
-  &--button {
-    @extend .type--link;
+  &__button {
+    @extend .type__link;
     color: $orange;
     background-color: $white;
     display: block;
@@ -29,11 +29,11 @@
       background-color: darken($white, 10%);
     }
 
-    @media (min-width: $tablet-small-width) {
+    @media (min-width: $bp-b) {
         width: 25%;
     }
 
-    @media (min-width: $desktop-small-width) {
+    @media (min-width: $bp-d) {
         width: 15%;
     }
   }

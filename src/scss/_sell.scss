@@ -1,26 +1,26 @@
-.sell {
+.c-sell {
   background-color: $brown-light;
   background-image: url(/images/wood_texture.png);
   @include section-padding;
 
-  &--form {
+  &__form {
     width: 90%;
     max-width: 37.5em; //600px
     margin: 0 auto;
 
-    @media (min-width: $tablet-small-width) {
+    @media (min-width: $bp-b) {
       padding: 2em 0;
     }
   }
 
-  &--header {
-    @extend .type--section-head;
+  &__header {
+    @extend .type__section-head;
     width: 90%;
     margin: 0 auto 1em;
   }
 
-  &--input {
-    @extend .type--p__reverse;
+  &__input {
+    @extend .type__p--reverse;
     display: block;
     box-sizing: border-box;
     margin-bottom: 1em;
@@ -38,45 +38,45 @@
       outline: none;
     }
 
-    @media (min-width: $tablet-small-width) {
+    @media (min-width: $bp-b) {
       float: left;
       width: 80%;
     }
   }
 
   //Style the placeholder text in the form input areas
-  &--input::-webkit-input-placeholder {
+  &__input::-webkit-input-placeholder {
     color: $white;
   }
 
-  &--input:-moz-placeholder { /* Firefox 18- */
+  &__input:-moz-placeholder { /* Firefox 18- */
      color: $white;
   }
 
-  &--input::-moz-placeholder {  /* Firefox 19+ */
+  &__input::-moz-placeholder {  /* Firefox 19+ */
      color: $white;
   }
 
-  &--input:-ms-input-placeholder {
+  &__input:-ms-input-placeholder {
      color: $white;
   }
 
-  &--input__alt {
-    @extend .sell--input;
+  &__input--alt {
+    @extend .c-sell__input;
     border-color: $blue-dark;
     background-color: lighten($blue-dark, 20%);
   }
 
-  &--input__text {
-    @extend .sell--input;
+  &__input--text {
+    @extend .c-sell__input;
 
-    @media (min-width: $tablet-small-width) {
+    @media (min-width: $bp-b) {
       width: 100%;
     }
   }
 
-  &--label {
-    @extend .type--p__reverse;
+  &__label {
+    @extend .type__p--reverse;
     text-align: center;
     display: block;
     box-sizing: border-box;
@@ -87,36 +87,36 @@
     border: 0.25em solid $green-dark;
     border-radius: none; //remove default radious on iOS
 
-    @media (min-width: $tablet-small-width) {
+    @media (min-width: $bp-b) {
       padding: 0.5em;
       float: left;
       width: 20%;
     }
   }
 
-  &--label__alt {
-    @extend .sell--label;
+  &__label--alt {
+    @extend .c-sell__label;
     background-color: $blue-dark;
     border-color: $blue-dark;
   }
 
-  &--submit {
+  &__submit {
     @extend .button;
     float: right;
     margin-top: 0;
     padding: 0.75em 2em;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $bp-e) {
       font-size: 1.25em;
     }
   }
 
-  &--type {
-    @extend .type--p__large;
+  &__type {
+    @extend .type__p--large;
     width: 90%;
     margin: 0 auto 1em;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $bp-e) {
       width: 60%;
     }
   }
