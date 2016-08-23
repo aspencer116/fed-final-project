@@ -14,6 +14,14 @@ The HTML is rendered using Handlebars templates, which rely on three areas:
 ## CSS
 The CSS is rendered using a mixture of libSass and PostCSS. Use `src/scss` to manage Sass files and partials.
 
+### Sass
+The Sass is named using the following rules:
+
+- BEM convention is used. Example: .block__element--modifier
+- Component or structural classes have a "c-" prefix. Example: .c-hero__container
+- Typography styles use the "text" prefix. Example: .text__header
+- Sass nesting is used on groups of related components
+
 ## JavaScript
 Place in necessary JavaScript files in `src/js` and they will be pulled over verbatim.
 
