@@ -4,6 +4,7 @@
   padding: 0;
   height: 2.75em;
   position: absolute;
+  z-index: 10;
 
   &__link {
     @extend .type__link;
@@ -64,7 +65,7 @@
     fill: $orange;
     width: 1.5em;
     position: absolute;
-    top: 2.75em;
+    top: 2.74em;
     left: calc(50% - 0.75em);
     transition: all 0.25s;
     transition-timing-function: ease-in-out;
@@ -77,8 +78,9 @@
 
   &__top {
     //fix the nav bar to the top of the page after javascript trigger
-    position: fixed;
-    top: 0;
-    z-index: 10;
+    @media (min-width: $bp-d) {
+      position: fixed;
+      top: 0;
+    }
   }
 }

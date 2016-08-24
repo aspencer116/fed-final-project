@@ -12,34 +12,72 @@
   }
 }
 
-.c-lion{
-  display: none;
+//Lion styles
 
-  @media (min-width: $bp-b) {
-    //display: block;
-    width: 200px;
-    position: absolute;
-    bottom: 2em;
-    left: 5%;
+.c-lion {
+    background-image: url("/images/lion.png");
+}
+
+.inlinesvg .c-lion {
+  background-image: none;
+  width: 12.5em; //200px
+  position: absolute;
+  bottom: 4em; //if no javascript loads
+  left: calc(50% - 6.25em);
+  z-index: 1;
+
+  @media (min-width: $bp-e) {
+    width: 18em;
+    left: calc(50% - 9em);
   }
 }
 
-#c-lion__eyes {
-  -webkit-animation: c-lion__eyes 6s infinite ease-in-out;
-          animation: c-lion__eyes 6s infinite ease-in-out;
+//colors
+.lion-1 {
+  fill:#F6BB60;
 }
 
-#c-lion__lids {
-  -webkit-animation: c-lion__lids 14.5s infinite ease-in-out;
-          animation: c-lion__lids 14.5s infinite ease-in-out;
+.lion-2 {
+  fill:#FFFFFF;
 }
 
-#c-lion__mouth {
-  -webkit-animation: c-lion__mouth 14.5s infinite ease-in-out;
-          animation: c-lion__mouth 14.5s infinite ease-in-out;
+.lion-3 {
+  fill:#F1C586;
 }
 
-@-webkit-keyframes c-lion__eyes {
+.lion-4 {
+  fill:#8A7967;
+}
+
+.lion-5 {
+  fill:#CFA16A;
+}
+
+.lion-6 {
+  fill:#231F20;
+}
+
+.lion-7 {
+  fill:#716558;
+}
+
+.lion-8 {
+  fill:#F6E7A1;
+}
+
+.c-lion__eyes {
+    animation: c-lion__eyes 6s infinite ease-in-out;
+}
+
+.c-lion__lids {
+    animation: c-lion__lids 14.5s infinite ease-in-out;
+}
+
+.c-lion__mouth {
+    animation: c-lion__mouth 14.5s infinite ease-in-out;
+}
+
+@keyframes c-lion__eyes {
   1% {
     opacity: 0;
   }
@@ -49,66 +87,382 @@
   }
 }
 
-@-webkit-keyframes c-lion__lids {
+@keyframes c-lion__lids {
   10%, 15% {
     transform: translateY(-10px);
   }
 
   0%, 30% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
-@-webkit-keyframes c-lion__mouth {
+@keyframes c-lion__mouth {
   10%, 15% {
     transform: translateY(60px);
   }
 
   0%, 30% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
 .c-lion__back {
-  display: none;
+  fill: $green;
+  position: absolute;
+  bottom: 2em; //if no javascript loads
+  z-index: 0;
+  left: calc(50% - 5em);
 
-  @media (min-width: $bp-b) {
-    fill: $green;
-    position: absolute;
-    z-index: -2;
-    bottom: -1em;
-    left: 7.5%;
+  @media (min-width: $bp-e) {
+    transform: scale(1.2);
   }
 }
 
 .c-lion__element {
-  display: none;
+  fill: $green;
+  position: absolute;
+  z-index: 0;
+  width: 1.125em;
+  height: 0.9375em;
+}
+
+.c-lion__element--1 {
+  @extend .c-lion__element;
+  left: 4.5%;
+  bottom: 4em; //positioning if javascript is not loaded
 
   @media (min-width: $bp-b) {
-    fill: $green;
-    position: absolute;
-    z-index: -2;
-    width: 1.125em;
-    height: 0.9375em;
+    left: 30%;
   }
 }
 
-#c-lion__element--1 {
-  left: 4.5%;
-  bottom: 8em; //positioning if javascript is not loaded
-}
-
-#c-lion__element--2 {
+.c-lion__element--2 {
+  @extend .c-lion__element;
   left: 9%;
-  bottom: 8em; //positioning if javascript is not loaded
+  bottom: 12.5em; //positioning if javascript is not loaded
+
+  @media (min-width: $bp-b) {
+    left: 35%;
+  }
 }
 
-#c-lion__element--3 {
-  left: 65%;
-  bottom: 8em; //positioning if javascript is not loaded
+.c-lion__element--3 {
+  @extend .c-lion__element;
+  left: 72%;
+  bottom: 8.25em; //positioning if javascript is not loaded
+
+  @media (min-width: $bp-b) {
+    left: 62%;
+  }
 }
 
-#c-lion__element--4 {
-  left: 80%;
-  bottom: 8em; //positioning if javascript is not loaded
+.c-lion__element--4 {
+  @extend .c-lion__element;
+  left: 87%;
+  bottom: 6em; //positioning if javascript is not loaded
+
+  @media (min-width: $bp-b) {
+    left: 74%;
+  }
+}
+
+//Owl styles
+.c-owl{
+  display: none;
+
+  @media (min-width: $bp-b) {
+    display: block;
+    width: 14em; //204px
+    position: absolute;
+    bottom: 6em;
+    left: calc(4.5% - 5.625em);
+    z-index: 1;
+  }
+
+  @media (min-width: $bp-e) {
+    width: 20em;
+    bottom: 5.5em;
+  }
+}
+
+.owl-1 {
+  fill:#F7BC60;
+}
+
+.owl-2 {
+  fill:#FFFFFF;
+}
+
+.owl-3 {
+  fill:#CDBBA2;
+}
+
+.owl-4 {
+  fill:#80561B;
+}
+
+.owl-5 {
+  fill:#9A8B7D;
+}
+
+.owl-6 {
+  fill:#726658;
+}
+
+.owl-7 {
+  fill:#4B3900;
+}
+
+.owl-8 {
+  fill:#3C2415;
+}
+
+.owl-9 {
+  fill:#D9CFC0;
+}
+
+.owl-10 {
+  fill:#FFCF82;
+}
+
+.owl-11 {
+  fill:#FDBA63;
+}
+
+.c-owl__wing--right {
+  animation: wing--right 7s infinite alternate ease-in-out;
+}
+
+.c-owl__wing--left {
+  animation: wing--left 7s infinite alternate ease-in-out;
+}
+
+.c-owl__eyes {
+  animation: eyes 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes wing--right {
+  2% {
+    transform: rotate(-7deg);
+    transform-origin: top;
+  }
+
+  0%, 4%, 100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes wing--left {
+  2% {
+    transform: rotate(5deg);
+    transform-origin: top;
+  }
+
+  0%, 4%, 100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes eyes {
+  2% {
+    opacity: 0;
+  }
+
+  0%, 4%, 100% {
+    opacity: 1;
+  }
+}
+
+.c-owl__back {
+  display: none;
+
+  @media (min-width: $bp-b) {
+    display: block;
+    fill: $green-brand;
+    position: absolute;
+    bottom: 14em; //if no javascript loads
+    z-index: 0;
+    left: calc(5% - 5em);
+    transform: rotate(30deg);
+  }
+
+  @media (min-width: $bp-e) {
+    left: 2%;
+    transform: scale(1.2) rotate(30deg);
+  }
+}
+
+.c-owl__element {
+  display: none;
+
+  @media (min-width: $bp-b) {
+    display: block;
+    fill: $green-brand;
+    position: absolute;
+    z-index: 0;
+    width: 1.125em;
+    height: 1.125em;
+  }
+}
+
+.c-owl__element--1 {
+  @extend .c-owl__element;
+  left: 7%;
+  bottom: 6em; //positioning if javascript is not loaded
+}
+
+.c-owl__element--2 {
+  @extend .c-owl__element;
+  left: 4.5%;
+  bottom: 30em; //positioning if javascript is not loaded
+}
+
+.c-owl__element--3 {
+  @extend .c-owl__element;
+  left: 16%;
+  bottom: 11.25em; //positioning if javascript is not loaded
+}
+
+.c-owl__element--4 {
+  @extend .c-owl__element;
+  left: 20.5%;
+  bottom: 4em; //positioning if javascript is not loaded
+}
+
+//Elephant styles
+.c-elephant{
+  display: none;
+
+  @media (min-width: $bp-b) {
+    display: block;
+    width: 9.25em; //204px
+    position: absolute;
+    bottom: 12em;
+    left: calc(91.5% - 4.125em);
+    z-index: 1;
+  }
+
+  @media (min-width: $bp-e) {
+    width: 16em;
+    left: 80.5%;
+    bottom: 14em;
+  }
+}
+
+.elephant-1 {
+  fill:#4c5a52;
+}
+
+.elephant-2 {
+  fill:#3a3f36;
+}
+
+.elephant-3 {
+  fill:#5e6e66;
+}
+
+.elephant-4 {
+  fill:#444d3e;
+}
+
+.elephant-5 {
+  fill:#fff;
+}
+
+.elephant-6 {
+  stroke:#8b9b92;
+  stroke-width:2px;
+}
+
+.cls-7 {
+  fill:#8b9b92;
+}
+
+.c-elephant__head {
+  animation: headMove 4.5s infinite alternate-reverse ease-in-out;
+}
+
+.c-elephant__eyes {
+  animation: elephant--eyes 7.125s infinite ease-in-out;
+}
+
+@-webkit-keyframes headMove {
+  0% {
+    transform: translateX(8px);
+  }
+
+  3% {
+    transform: translateX(-8px);
+  }
+
+  6%, 100% {
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes elephant--eyes {
+  13% {
+    opacity: 0;
+  }
+
+  0%, 12%, 14%, 100% {
+    opacity: 1;
+  }
+}
+
+.c-elephant__back {
+  display: none;
+
+  @media (min-width: $bp-b) {
+    display: block;
+    fill: $blue;
+    position: absolute;
+    bottom: 14em; //if no javascript loads
+    z-index: 0;
+    left: 84%;
+    transform: rotate(-20deg);
+  }
+
+  @media (min-width: $bp-e) {
+    transform: scale(1.4) rotate(-20deg);
+  }
+}
+
+.c-elephant__element {
+  display: none;
+
+  @media (min-width: $bp-b) {
+    display: block;
+    fill: $blue;
+    position: absolute;
+    z-index: 0;
+    width: 1.125em;
+    height: 1.125em;
+    transform: rotate(45deg);
+  }
+}
+
+.c-elephant__element--1 {
+  @extend .c-elephant__element;
+  left: 82%;
+  bottom: 3.5em; //positioning if javascript is not loaded
+}
+
+.c-elephant__element--2 {
+  @extend .c-elephant__element;
+  left: 91.5%;
+  bottom: 8.125em; //positioning if javascript is not loaded
+}
+
+.c-elephant__element--3 {
+  @extend .c-elephant__element;
+  left: 88%;
+  bottom: 28em; //positioning if javascript is not loaded
+}
+
+.c-elephant__element--4 {
+  @extend .c-elephant__element;
+  left: 94.5%;
+  bottom: 26em; //positioning if javascript is not loaded
 }
