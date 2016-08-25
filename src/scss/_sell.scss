@@ -1,6 +1,6 @@
 .c-sell {
   background-color: $brown-light;
-  background-image: url(/images/wood_texture.png);
+  background-image: url("../images/wood_texture.png");
   @include section-padding;
 
   &__form {

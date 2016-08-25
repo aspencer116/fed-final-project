@@ -142,7 +142,7 @@
       width: 18em; } }
 
 .c-lion {
-  background-image: url("/images/lion.png"); }
+  background-image: url("../images/lion.png"); }
 
 .inlinesvg .c-lion {
   background-image: none;
@@ -530,7 +530,7 @@
 
 .c-hero {
   background-color: #EDDFD3;
-  background-image: url(/images/playingWithToys_products_1000.jpg);
+  background-image: url("../images/playingWithToys_products_1000.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -552,10 +552,10 @@
               justify-content: center; } }
   @media screen and (min-width: 40em) {
     .c-hero {
-      background-image: url(/images/playingWithToys_products_1920.jpg); } }
+      background-image: url("../images/playingWithToys_products_1920.jpg"); } }
   @media screen and (min-width: 62.5em) {
     .c-hero {
-      background-image: url(/images/playingWithToys_products.jpg); } }
+      background-image: url("../images/playingWithToys_products.jpg"); } }
   .c-hero__container {
     display: block;
     width: 100%;
@@ -645,7 +645,7 @@
 
 .c-about {
   background-color: #FDFBFA;
-  background-image: url("/images/lightTexture.png");
+  background-image: url("../images/lightTexture.png");
   background-size: 12.5em;
   width: 100%;
   box-sizing: border-box;
@@ -708,7 +708,7 @@
   .c-products__hero {
     padding: 3em 0;
     background-color: #EDDFD3;
-    background-image: url("/images/wallPuzzle_hero.jpg");
+    background-image: url("../images/wallPuzzle_hero.jpg");
     background-position: center center;
     background-size: cover;
     position: relative; }
@@ -831,18 +831,18 @@
         position: absolute;
         bottom: 0; } }
   .c-product__image--wallpuzzle {
-    background-image: url("/images/wallPuzzle_detail.jpg"); }
+    background-image: url("../images/wallPuzzle_detail.jpg"); }
   .c-product__image--flashcards {
     border-color: #3FB1CC;
-    background-image: url("/images/flashcards_detail.jpg"); }
+    background-image: url("../images/flashcards_detail.jpg"); }
   .c-product__image--posters {
-    background-image: url("/images/posters_detail.jpg"); }
+    background-image: url("../images/posters_detail.jpg"); }
   .c-product__image--walldecal {
     border-color: #80BA32;
-    background-image: url("/images/wallDecal_detail.jpg"); }
+    background-image: url("../images/wallDecal_detail.jpg"); }
   .c-product__image--totes {
     border-color: #3FB1CC;
-    background-image: url("/images/tote_detail.jpg"); }
+    background-image: url("../images/tote_detail.jpg"); }
   .c-product__text {
     width: 80%;
     margin: 0 auto; }
@@ -892,7 +892,7 @@
 
 .c-proof {
   background-color: #FDFBFA;
-  background-image: url("/images/lightTexture.png");
+  background-image: url("../images/lightTexture.png");
   background-size: 12.5em;
   padding: 3em 0; }
   @media (min-width: 47em) {
@@ -1034,7 +1034,7 @@
 
 .c-sell {
   background-color: #EDDFD3;
-  background-image: url(/images/wood_texture.png);
+  background-image: url("../images/wood_texture.png");
   padding: 3em 0; }
   @media (min-width: 40em) {
     .c-sell {
@@ -1132,7 +1132,7 @@ body {
 
 .background {
   background-color: #4B3900;
-  background-image: url("/images/allAnimals_960.jpg");
+  background-image: url("../images/allAnimals_960.jpg");
   background-size: 100%;
   position: fixed;
   display: block;

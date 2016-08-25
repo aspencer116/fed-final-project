@@ -1,6 +1,6 @@
 .c-hero {
   background-color: $brown-light;
-  background-image: url(/images/playingWithToys_products_1000.jpg);
+  background-image: url("../images/playingWithToys_products_1000.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -18,11 +18,11 @@
   }
 
   @media screen and (min-width: $bp-b) {
-    background-image: url(/images/playingWithToys_products_1920.jpg);
+    background-image: url("../images/playingWithToys_products_1920.jpg");
   }
 
   @media screen and (min-width: $bp-e) {
-    background-image: url(/images/playingWithToys_products.jpg);
+    background-image: url("../images/playingWithToys_products.jpg");
   }
 
   &__container {

@@ -144,30 +144,30 @@ $bp-3up: 75em; //1200px
 
   &__image--wallpuzzle {
     @extend .c-product__image--detailed;
-    background-image: url("/images/wallPuzzle_detail.jpg");
+    background-image: url("../images/wallPuzzle_detail.jpg");
   }
 
   &__image--flashcards {
     @extend .c-product__image--detailed;
     border-color: $blue-dark;
-    background-image: url("/images/flashcards_detail.jpg");
+    background-image: url("../images/flashcards_detail.jpg");
   }
 
   &__image--posters {
     @extend .c-product__image--detailed;
-    background-image: url("/images/posters_detail.jpg");
+    background-image: url("../images/posters_detail.jpg");
   }
 
   &__image--walldecal {
     @extend .c-product__image--detailed;
     border-color: $green-dark;
-    background-image: url("/images/wallDecal_detail.jpg");
+    background-image: url("../images/wallDecal_detail.jpg");
   }
 
   &__image--totes {
     @extend .c-product__image--detailed;
     border-color: $blue-dark;
-    background-image: url("/images/tote_detail.jpg");
+    background-image: url("../images/tote_detail.jpg");
   }
 
   &__text {

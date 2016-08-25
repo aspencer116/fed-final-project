@@ -1,7 +1,7 @@
 //for the light texture background
 @mixin background-pattern {
   background-color: $white-tint; //backup color for when images fail to load
-  background-image: url("/images/lightTexture.png");
+  background-image: url("../images/lightTexture.png");
   background-size: 12.5em; //200px wide. Constrain to make the pattern smaller on smaller screens
 
   @media (min-width: $bp-c) {
