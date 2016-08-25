@@ -30,28 +30,73 @@
 
   }
 
-  &__arrow {
-    position: absolute;
-    margin-left: 172px;
-    margin-top: -20px;
-    fill: darken($green-brand, 10%);
+  &__container {
+    background-color: $green-brand;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0 auto 1em;
+    border: solid 0.25em $green-brand-d1;
+    position: relative;
 
-    display: none; //hide on mobile size
+    &--alt1 {
+      @extend .c-product__container;
+      background-color: $blue;
+      border-color: $blue-dark;
+    }
   }
 
-  &__arrow--alt {
-    @extend .c-product__arrow;
-    fill: darken($blue, 10%);
+  &__header {
+      @extend .type__product;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0.5em 0;
+      border-bottom: solid 0.2em $green-brand-d1;
+
+      &--alt1 {
+        @extend .c-product__header;
+        border-color: $blue-dark;
+      }
   }
 
-  &__check {
-    display: none;
+  &__image--featured {
+    width: 80%;
+    max-width: 31.25em; //500px
+    display: block;
+    margin: 2em auto;
+    position: relative;
   }
 
-  &__check:checked  {
-    height: 10em;
+  &__image--detailed {
+    width: 100%;
+    height: 9em;
+    margin-top: 2em;
+    overflow: hidden;
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+    border-top: solid 0.2em $green-brand-d1;
   }
 
+  &__image--wallpuzzle {
+    @extend .c-product__image--detailed;
+    background-image: url("/images/wallPuzzle_detail.jpg");
+  }
+
+  &__image--flashcards {
+    @extend .c-product__image--detailed;
+    border-color: $blue-dark;
+    background-image: url("/images/flashcards_detail.jpg");
+  }
+
+  &__text {
+    @extend .type__p;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+/*
   &__container {
     height: 20em;
     box-sizing: border-box;
@@ -66,6 +111,8 @@
     align-items: center;
     justify-content: center;
   }
+
+
 
   &__container--alt {
     @extend .c-product__container;
@@ -137,4 +184,6 @@
     border: solid 6px darken($blue, 10%);
     background-color: $blue;
   }
+
+  */
 }
