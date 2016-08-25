@@ -1,3 +1,6 @@
+//local breakpoint declaration
+$bp-3up: 75em; //1200px
+
 .c-product {
   width: 90%;
   margin: 2em auto;
@@ -8,26 +11,33 @@
   }
 
   @media (min-width: $bp-c) {
+    width: 75%;
+    margin: 4em auto;
+    padding: 1em;
+  }
+
+  @media (min-width: $bp-d) {
     width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4em;
+  }
+
+  @media (min-width: $bp-f) {
+    padding: 2em;
   }
 
   &__3up {
     @extend .c-product;
 
     @media (min-width: $bp-c) {
-      width: 60%;
-      display: block;
+      width: 75%;
     }
 
     @media (min-width: $bp-d) {
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
+      width: 60%;
     }
 
+    @media (min-width: $bp-3up) {
+      width: 90%;
+    }
   }
 
   &__container {
@@ -38,10 +48,50 @@
     border: solid 0.25em $green-brand-d1;
     position: relative;
 
+    @media (min-width: $bp-a) {
+      margin-bottom: 2em;
+    }
+
+    @media (min-width: $bp-d) {
+      float: left;
+      width: 45%;
+      margin: 0 2.5%;
+      height: 40em;
+    }
+
+    @media (min-width: $bp-f) {
+        height: 45em;
+    }
+
     &--alt1 {
       @extend .c-product__container;
       background-color: $blue;
       border-color: $blue-dark;
+    }
+
+    &--alt2 {
+      @extend .c-product__container;
+      background-color: $green;
+      border-color: $green-dark;
+    }
+  }
+
+  &__container--3up {
+    @media (min-width: $bp-d) {
+      float: none;
+      width: 100%;
+      margin: 0 auto 2em;
+    }
+
+    @media (min-width: $bp-3up) {
+      float: left;
+      width: 30.83%;
+      margin: 0 1.25%;
+      height: 35em;
+    }
+
+    @media (min-width: $bp-f) {
+        height: 40em;
     }
   }
 
@@ -57,6 +107,11 @@
         @extend .c-product__header;
         border-color: $blue-dark;
       }
+
+      &--alt2 {
+        @extend .c-product__header;
+        border-color: $green-dark;
+      }
   }
 
   &__image--featured {
@@ -65,6 +120,10 @@
     display: block;
     margin: 2em auto;
     position: relative;
+
+    @media (min-width: $bp-e) {
+      width: 70%;
+    }
   }
 
   &__image--detailed {
@@ -76,6 +135,11 @@
     background-position: center center;
     background-size: cover;
     border-top: solid 0.2em $green-brand-d1;
+
+    @media (min-width: $bp-d) {
+      position: absolute;
+      bottom: 0;
+    }
   }
 
   &__image--wallpuzzle {
@@ -87,6 +151,23 @@
     @extend .c-product__image--detailed;
     border-color: $blue-dark;
     background-image: url("/images/flashcards_detail.jpg");
+  }
+
+  &__image--posters {
+    @extend .c-product__image--detailed;
+    background-image: url("/images/posters_detail.jpg");
+  }
+
+  &__image--walldecal {
+    @extend .c-product__image--detailed;
+    border-color: $green-dark;
+    background-image: url("/images/wallDecal_detail.jpg");
+  }
+
+  &__image--totes {
+    @extend .c-product__image--detailed;
+    border-color: $blue-dark;
+    background-image: url("/images/tote_detail.jpg");
   }
 
   &__text {
