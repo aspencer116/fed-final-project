@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Avenir Medium";
-  src: url("/fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
-  src: url("/fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"), url("/fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("/fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("/fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"), url("/fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg"); }
+  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
+  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"), url("../fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("../fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("../fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"), url("../fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg"); }
 
 @font-face {
   font-family: "Avenir Next Bold";
-  src: url("/fonts/6ff8ab07-ccb4-4a91-8f0f-2bd4367902e8.eot?#iefix");
-  src: url("/fonts/6ff8ab07-ccb4-4a91-8f0f-2bd4367902e8.eot?#iefix") format("eot"), url("/fonts/91799b0e-0ef8-446e-b274-5509412e1242.woff2") format("woff2"), url("/fonts/97fb5311-bdbd-46bc-bf69-3bcf8c744cda.woff") format("woff"), url("/fonts/88093bd3-b377-4278-8abe-8460dd24d0e8.ttf") format("truetype"), url("/fonts/0fde1539-69df-4e3d-83ef-ae23d10dd2a5.svg#0fde1539-69df-4e3d-83ef-ae23d10dd2a5") format("svg"); }
+  src: url("../fonts/6ff8ab07-ccb4-4a91-8f0f-2bd4367902e8.eot?#iefix");
+  src: url("../fonts/6ff8ab07-ccb4-4a91-8f0f-2bd4367902e8.eot?#iefix") format("eot"), url("../fonts/91799b0e-0ef8-446e-b274-5509412e1242.woff2") format("woff2"), url("../fonts/97fb5311-bdbd-46bc-bf69-3bcf8c744cda.woff") format("woff"), url("../fonts/88093bd3-b377-4278-8abe-8460dd24d0e8.ttf") format("truetype"), url("../fonts/0fde1539-69df-4e3d-83ef-ae23d10dd2a5.svg#0fde1539-69df-4e3d-83ef-ae23d10dd2a5") format("svg"); }
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("/fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
-  src: url("/fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix") format("eot"), url("/fonts/e0d6f852-5401-4bbf-9672-47a50c5c87c6.woff2") format("woff2"), url("/fonts/7fedd582-6ae3-4850-be2f-4acae2e74fa5.woff") format("woff"), url("/fonts/d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf") format("truetype"), url("/fonts/849e0009-7435-46a3-b88d-c41c3ff639d4.svg#849e0009-7435-46a3-b88d-c41c3ff639d4") format("svg"); }
+  src: url("../fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
+  src: url("../fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix") format("eot"), url("../fonts/e0d6f852-5401-4bbf-9672-47a50c5c87c6.woff2") format("woff2"), url("../fonts/7fedd582-6ae3-4850-be2f-4acae2e74fa5.woff") format("woff"), url("../fonts/d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf") format("truetype"), url("../fonts/849e0009-7435-46a3-b88d-c41c3ff639d4.svg#849e0009-7435-46a3-b88d-c41c3ff639d4") format("svg"); }
 
 .type__hero, .type__section-head, .c-about__header, .c-products__head, .c-sell__header {
   font-family: 'Bebas Neue', tahoma, arial, sans-serif;
@@ -732,52 +732,58 @@
     width: 80%;
     margin: 0 auto; }
 
-.c-product, .c-product__3up {
+.c-product {
   width: 90%;
   margin: 2em auto;
   padding: 0; }
   @media (min-width: 25em) {
-    .c-product, .c-product__3up {
+    .c-product {
       width: 80%; } }
   @media (min-width: 47em) {
-    .c-product, .c-product__3up {
+    .c-product {
       width: 75%;
       margin: 4em auto;
       padding: 1em; } }
   @media (min-width: 60em) {
-    .c-product, .c-product__3up {
-      width: 90%; } }
+    .c-product {
+      width: 80%; } }
   @media (min-width: 95em) {
-    .c-product, .c-product__3up {
+    .c-product {
       padding: 2em; } }
-  @media (min-width: 47em) {
-    .c-product__3up {
-      width: 75%; } }
-  @media (min-width: 60em) {
-    .c-product__3up {
-      width: 60%; } }
-  @media (min-width: 75em) {
-    .c-product__3up {
-      width: 90%; } }
+  .c-product__arrow, .c-product__arrow--alt1, .c-product__arrow--alt2 {
+    display: none; }
+    @media (min-width: 75em) {
+      .c-product__arrow, .c-product__arrow--alt1, .c-product__arrow--alt2 {
+        display: block;
+        top: 18.25em;
+        fill: #D5D10E;
+        position: absolute;
+        right: 20%;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        -webkit-transition-delay: 100ms;
+                transition-delay: 100ms; } }
+  @media (min-width: 75em) and (min-width: 95em) {
+    .c-product__arrow, .c-product__arrow--alt1, .c-product__arrow--alt2 {
+      top: 23em; } }
+    .c-product__arrow--alt1 {
+      fill: #3FB1CC; }
+    .c-product__arrow--alt2 {
+      fill: #80BA32; }
   .c-product__container, .c-product__container--alt1, .c-product__container--alt2 {
     background-color: #F3EA00;
     list-style: none;
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin: 0 auto 1em;
-    border: solid 0.25em #D5D10E;
+    border: solid 0.35em #D5D10E;
     position: relative; }
     @media (min-width: 25em) {
       .c-product__container, .c-product__container--alt1, .c-product__container--alt2 {
         margin-bottom: 2em; } }
-    @media (min-width: 60em) {
-      .c-product__container, .c-product__container--alt1, .c-product__container--alt2 {
-        float: left;
-        width: 45%;
-        margin: 0 2.5%;
-        height: 40em; } }
     @media (min-width: 95em) {
       .c-product__container, .c-product__container--alt1, .c-product__container--alt2 {
-        height: 45em; } }
+        margin-bottom: 4em;
+        max-width: 100em; } }
     .c-product__container--alt1 {
       background-color: #50D2F1;
       border-color: #3FB1CC; }
@@ -785,67 +791,132 @@
       background-color: #99DC3E;
       border-color: #80BA32; }
   @media (min-width: 60em) {
-    .c-product__container--3up {
-      float: none;
-      width: 100%;
-      margin: 0 auto 2em; } }
-  @media (min-width: 75em) {
-    .c-product__container--3up {
+    .c-product__copy {
       float: left;
-      width: 30.83%;
-      margin: 0 1.25%;
-      height: 35em; } }
+      width: 66.66%;
+      height: 30em; } }
+  @media (min-width: 75em) {
+    .c-product__copy {
+      width: 80%; } }
   @media (min-width: 95em) {
-    .c-product__container--3up {
+    .c-product__copy {
       height: 40em; } }
   .c-product__header, .c-product__header--alt1, .c-product__header--alt2 {
     display: block;
     width: 100%;
     margin: 0;
     padding: 0.5em 0;
-    border-bottom: solid 0.2em #D5D10E; }
+    border-bottom: solid 0.2em #D5D10E;
+    background-color: #D5D10E; }
     .c-product__header--alt1 {
-      border-color: #3FB1CC; }
+      border-color: #3FB1CC;
+      background-color: #3FB1CC; }
     .c-product__header--alt2 {
-      border-color: #80BA32; }
-  .c-product__image--featured {
-    width: 80%;
-    max-width: 31.25em;
-    display: block;
-    margin: 2em auto;
-    position: relative; }
-    @media (min-width: 62.5em) {
-      .c-product__image--featured {
-        width: 70%; } }
+      border-color: #80BA32;
+      background-color: #80BA32; }
   .c-product__image--detailed, .c-product__image--wallpuzzle, .c-product__image--flashcards, .c-product__image--posters, .c-product__image--walldecal, .c-product__image--totes {
     width: 100%;
     height: 9em;
-    margin-top: 2em;
+    margin-top: 3em;
     overflow: hidden;
     background-color: transparent;
     background-position: center center;
     background-size: cover;
-    border-top: solid 0.2em #D5D10E; }
+    border-top: solid 0.2em #D5D10E;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-transition-delay: 100ms;
+            transition-delay: 100ms; }
+    @media (min-width: 40em) {
+      .c-product__image--detailed, .c-product__image--wallpuzzle, .c-product__image--flashcards, .c-product__image--posters, .c-product__image--walldecal, .c-product__image--totes {
+        margin-top: 4em; } }
     @media (min-width: 60em) {
       .c-product__image--detailed, .c-product__image--wallpuzzle, .c-product__image--flashcards, .c-product__image--posters, .c-product__image--walldecal, .c-product__image--totes {
+        float: left;
+        width: 33.34%;
+        height: 30em;
+        margin: 0;
+        box-sizing: border-box;
+        border-top: none;
+        border-left: solid 0.35em #D5D10E; } }
+    @media (min-width: 75em) {
+      .c-product__image--detailed, .c-product__image--wallpuzzle, .c-product__image--flashcards, .c-product__image--posters, .c-product__image--walldecal, .c-product__image--totes {
+        width: 20%;
         position: absolute;
-        bottom: 0; } }
+        right: 0; }
+        .c-product__image--detailed:hover, .c-product__image--wallpuzzle:hover, .c-product__image--flashcards:hover, .c-product__image--posters:hover, .c-product__image--walldecal:hover, .c-product__image--totes:hover, .c-product__image--detailed:focus, .c-product__image--wallpuzzle:focus, .c-product__image--flashcards:focus, .c-product__image--posters:focus, .c-product__image--walldecal:focus, .c-product__image--totes:focus {
+          width: 100%; }
+        .c-product__image--detailed:hover + svg, .c-product__image--wallpuzzle:hover + svg, .c-product__image--flashcards:hover + svg, .c-product__image--posters:hover + svg, .c-product__image--walldecal:hover + svg, .c-product__image--totes:hover + svg {
+          right: calc(100% - 1.125em);
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); } }
+    @media (min-width: 95em) {
+      .c-product__image--detailed, .c-product__image--wallpuzzle, .c-product__image--flashcards, .c-product__image--posters, .c-product__image--walldecal, .c-product__image--totes {
+        height: 40em; } }
+  .c-product__image--featured, .c-product__image--featured--alt2 {
+    width: 80%;
+    max-width: 31.25em;
+    display: block;
+    margin: 2em auto;
+    position: relative;
+    -webkit-filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.2)); }
+    @media (min-width: 40em) {
+      .c-product__image--featured, .c-product__image--featured--alt2 {
+        width: 70%;
+        margin: 3em auto; } }
+    @media (min-width: 62.5em) {
+      .c-product__image--featured, .c-product__image--featured--alt2 {
+        width: 70%; } }
+    @media (min-width: 95em) {
+      .c-product__image--featured, .c-product__image--featured--alt2 {
+        width: 50%;
+        margin: 4em auto 0; } }
+    .c-product__image--featured--alt2 {
+      -webkit-filter: drop-shadow(0 2px 10px #c8c800);
+              filter: drop-shadow(0 2px 10px #c8c800); }
   .c-product__image--wallpuzzle {
-    background-image: url("../images/wallPuzzle_detail.jpg"); }
+    background-image: url("../images/wallPuzzle_detail-720.jpg"); }
+    @media (min-width: 60em) {
+      .c-product__image--wallpuzzle {
+        background-image: url("../images/wallPuzzle_detail.jpg"); } }
   .c-product__image--flashcards {
     border-color: #3FB1CC;
-    background-image: url("../images/flashcards_detail.jpg"); }
+    background-image: url("../images/flashcards_detail-720.jpg"); }
+    @media (min-width: 60em) {
+      .c-product__image--flashcards {
+        background-image: url("../images/flashcards_detail.jpg"); } }
   .c-product__image--posters {
-    background-image: url("../images/posters_detail.jpg"); }
+    background-image: url("../images/posters_detail-720.jpg"); }
+    @media (min-width: 60em) {
+      .c-product__image--posters {
+        background-image: url("../images/posters_detail.jpg"); } }
   .c-product__image--walldecal {
     border-color: #80BA32;
-    background-image: url("../images/wallDecal_detail.jpg"); }
+    background-image: url("../images/wallDecal_detail-720.jpg"); }
+    @media (min-width: 60em) {
+      .c-product__image--walldecal {
+        background-image: url("../images/wallDecal_detail.jpg"); } }
   .c-product__image--totes {
     border-color: #3FB1CC;
-    background-image: url("../images/tote_detail.jpg"); }
+    background-image: url("../images/tote_detail-720.jpg"); }
+    @media (min-width: 60em) {
+      .c-product__image--totes {
+        background-image: url("../images/tote_detail.jpg"); } }
   .c-product__text {
     width: 80%;
     margin: 0 auto; }
+    @media (min-width: 75em) {
+      .c-product__text {
+        width: 70%;
+        max-width: 38.75em; } }
+    @media (min-width: 95em) {
+      .c-product__text {
+        margin: 2em auto 0;
+        max-width: 42em;
+        font-size: 1.5em;
+        line-height: 1.875em; } }
 
 .c-product-alt {
   width: 90%;
@@ -870,8 +941,11 @@
             -ms-flex-pack: justify;
                 justify-content: space-between; } }
   .c-product-alt__image {
+    height: 100%;
     width: 100%;
-    height: 100%; }
+    max-width: 23.75em;
+    display: block;
+    margin: 0 auto; }
   .c-product-alt__imageBack, .c-product-alt__imageBack--alt {
     margin-top: 0.75em;
     background-color: #F3EA00;
@@ -1007,6 +1081,9 @@
   @media (min-width: 95em) {
     .c-buy {
       padding: 8em 0; } }
+  @media (min-width: 95em) {
+    .c-buy {
+      padding: 12em 0; } }
   .c-buy__type {
     text-align: center;
     margin: 1em auto 2em;

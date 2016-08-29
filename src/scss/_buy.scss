@@ -3,6 +3,10 @@
   background: linear-gradient(to bottom right, #DD8225, #C76000);
   @include section-padding;
 
+  @media (min-width: $bp-f) {
+    padding: 12em 0;
+  }
+  
   &__type {
     @extend .type__p--reverse;
     text-align: center;
