@@ -136,15 +136,12 @@
   margin: 0 auto 1.5em; }
   @media screen and (min-width: 47em) {
     .c-AMElogo__color {
-      width: 14em; } }
+      max-width: 14em; } }
   @media screen and (min-width: 62.5em) {
     .c-AMElogo__color {
-      width: 18em; } }
+      max-width: 18em; } }
 
 .c-lion {
-  background-image: url("../images/lion.png"); }
-
-.inlinesvg .c-lion {
   background-image: none;
   width: 12.5em;
   position: absolute;
@@ -152,7 +149,7 @@
   left: calc(50% - 6.25em);
   z-index: 1; }
   @media (min-width: 62.5em) {
-    .inlinesvg .c-lion {
+    .c-lion {
       width: 18em;
       left: calc(50% - 9em); } }
 
@@ -559,17 +556,18 @@
   .c-hero__container {
     display: block;
     width: 100%;
-    padding: 2em;
+    padding: 5em 2em 2em;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
     top: 0; }
     @media screen and (min-width: 25em) {
       .c-hero__container {
-        padding: 2em 3.5em; } }
+        padding: 5em 3.5em 2em; } }
     @media screen and (min-width: 40em) {
       .c-hero__container {
         width: 80%;
+        padding: 2em 3.5em;
         position: relative; } }
     @media screen and (min-width: 47em) {
       .c-hero__container {
@@ -577,16 +575,23 @@
     @media screen and (min-width: 60em) {
       .c-hero__container {
         width: 60%; } }
+    .c-hero__container--jsload {
+      padding-top: 2em; }
 
 .c-action {
   width: 100%;
   margin: 0;
   padding: 0;
   height: 2.75em;
-  position: absolute;
-  z-index: 10; }
+  z-index: 10;
+  position: fixed;
+  top: 0; }
+  .c-action__jsload {
+    position: absolute;
+    top: auto; }
   .c-action__link, .c-action__link--alt {
-    height: 2.75em;
+    height: 52px;
+    height: 3.25rem;
     width: 50%;
     list-style: none;
     margin: 0;
@@ -611,26 +616,31 @@
     color: #4B3900; }
     @media (min-width: 60em) {
       .c-action__link:hover, .c-action__link--alt:hover {
-        height: 3.5em;
+        height: 64px;
+        height: 4rem;
         background-color: #f47749; }
       .c-action__link:hover svg, .c-action__link--alt:hover svg {
-        top: 3.5em;
+        top: 64px;
+        top: 4rem;
         fill: #f47749; } }
   .c-action__link--alt {
     background-color: #4B3900;
     color: #EDDFD3; }
     @media (min-width: 60em) {
       .c-action__link--alt:hover {
-        height: 3.5em;
+        height: 64px;
+        height: 4rem;
         background-color: #322600; }
       .c-action__link--alt:hover svg {
-        top: 3.5em;
+        top: 64px;
+        top: 4rem;
         fill: #322600; } }
   .c-action__arrow, .c-action__arrow--alt {
     fill: #F26531;
     width: 1.5em;
     position: absolute;
-    top: 2.74em;
+    top: 52px;
+    top: 3.25rem;
     left: calc(50% - 0.75em);
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
@@ -638,10 +648,9 @@
             transition-timing-function: ease-in-out; }
   .c-action__arrow--alt {
     fill: #4B3900; }
-  @media (min-width: 60em) {
-    .c-action__top {
-      position: fixed;
-      top: 0; } }
+  .c-action__top {
+    position: fixed;
+    top: 0; }
 
 .c-about {
   background-color: #FDFBFA;
@@ -706,25 +715,16 @@
   background-color: #FDFBFA;
   padding-bottom: 2em; }
   .c-products__hero {
-    padding: 3em 0;
-    background-color: #EDDFD3;
-    background-image: url("../images/wallPuzzle_hero.jpg");
+    padding: 3.5em 0;
+    background-color: #99DC3E;
+    background: -webkit-linear-gradient(top left, #b0e469, #72ae20);
+    background: linear-gradient(to bottom right, #b0e469, #72ae20);
     background-position: center center;
     background-size: cover;
     position: relative; }
     @media (min-width: 40em) {
       .c-products__hero {
-        padding: 5em; } }
-    .c-products__hero:before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(153, 220, 62, 0.8);
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0; }
+        padding: 6em; } }
   .c-products__head {
     position: relative; }
   .c-products__sub-head {
@@ -1138,8 +1138,10 @@
     background-color: #b0db77;
     color: #4B3900;
     border: 0.25em solid #80BA32;
-    -webkit-border-radius: none;
-    -webkit-appearance: none; }
+    border-radius: 0em;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
     .c-sell__input:focus, .c-sell__input--alt:focus, .c-sell__input--text:focus {
       background-color: white;
       outline: none; }
@@ -1201,7 +1203,7 @@
     font-size: 0.75em;
     text-align: center; }
   .c-footer__link {
-    color: inherit;
+    color: #4B3900;
     font-weight: 700; }
 
 body {

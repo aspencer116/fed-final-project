@@ -3,12 +3,19 @@
   margin: 0;
   padding: 0;
   height: 2.75em;
-  position: absolute;
   z-index: 10;
+  position: fixed;
+  top: 0;
+
+  &__jsload {
+    position: absolute;
+    top: auto;
+  }
 
   &__link {
     @extend .type__link;
-    height: 2.75em;
+    height: 52px;
+    height: 3.25rem; //36px
     width: 50%;
     list-style: none;
     margin: 0;
@@ -32,12 +39,14 @@
 
     @media (min-width: $bp-d) {
       &:hover {
-        height: 3.5em;
+        height: 64px;
+        height: 4rem;
         background-color: lighten($orange, 5%);
       }
 
       &:hover svg {
-        top: 3.5em;
+        top: 64px;
+        top: 4rem;
         fill: lighten($orange, 5%);
       }
     }
@@ -50,12 +59,14 @@
 
     @media (min-width: $bp-d) {
       &:hover {
-        height: 3.5em;
+        height: 64px;
+        height: 4rem;
         background-color: darken($brown-brand, 5%);
       }
 
       &:hover svg {
-        top: 3.5em;
+        top: 64px;
+        top: 4rem;
         fill: darken($brown-brand, 5%);
       }
     }
@@ -65,7 +76,8 @@
     fill: $orange;
     width: 1.5em;
     position: absolute;
-    top: 2.74em;
+    top: 52px;
+    top: 3.25rem;
     left: calc(50% - 0.75em);
     transition: all 0.25s;
     transition-timing-function: ease-in-out;
@@ -78,9 +90,7 @@
 
   &__top {
     //fix the nav bar to the top of the page after javascript trigger
-    @media (min-width: $bp-d) {
-      position: fixed;
-      top: 0;
-    }
+    position: fixed;
+    top: 0;
   }
 }

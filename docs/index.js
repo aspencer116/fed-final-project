@@ -52,21 +52,19 @@ $(window).scroll(function() {
   });
 });
 
-//Product tile functionality
-
-
 //Sticky nav
 $(document).ready(function(){
   $(window).resize(function(){
+    //Add classes when JS loads to turn off default sticy nav
+    $('.c-action').addClass('c-action__jsload');
+    $('.c-hero__container').addClass('c-hero__container--jsload');
 
     // Variables
     var windowHeight = $(window).height();
     console.log(windowHeight);
-    var toggle = .85 * windowHeight;
+    var toggle = .80 * windowHeight;
 
     // When the document is scrolled 85%, toggle the classes
-    // Does not work in iOS 7 or below
-    // Hasn't been tested in iOS 8
     $(document).scroll(function(){
 
       // Store the document scroll function in a variable
@@ -86,4 +84,4 @@ $(document).ready(function(){
   // Call it on resize to ensure the vh gets loaded correctly
   }).resize();
 
-}); // jQuery
+}); //jQuery

@@ -30,8 +30,8 @@
     background-color: lighten($green-dark, 20%);
     color: $brown-brand;
     border: 0.25em solid $green-dark;
-    -webkit-border-radius: none; //remove default radious on iOS
-    -webkit-appearance: none;
+    border-radius: 0em; //remove default radious on iOS
+    appearance: none;
 
     &:focus {
       background-color: $white;
