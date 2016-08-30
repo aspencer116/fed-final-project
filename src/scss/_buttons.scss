@@ -11,6 +11,7 @@
   @media (min-width: $bp-c) {
     &:hover {
       background-color: darken($orange, 10%);
+      cursor: pointer;
     }
 
     &:active {

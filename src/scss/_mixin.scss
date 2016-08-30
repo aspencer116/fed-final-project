@@ -15,13 +15,13 @@
 
 //default section padding which will change based on screen size
 @mixin section-padding {
-  padding: 3em 0;
+  padding: 5em 0;
 
   @media (min-width: $bp-b) {
-    padding: 5em 0;
+    padding: 8em 0;
   }
 
   @media (min-width: $bp-f) {
-    padding: 8em 0;
+    padding: 10em 0;
   }
 }

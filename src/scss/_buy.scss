@@ -6,7 +6,7 @@
   @media (min-width: $bp-f) {
     padding: 12em 0;
   }
-  
+
   &__type {
     @extend .type__p--reverse;
     text-align: center;
@@ -14,7 +14,10 @@
     width: 90%;
 
     @media (min-width: $bp-b) {
-        width: 70%;
+      margin: 1.5em auto 3em;
+      width: 70%;
+      max-width: 800px;
+      max-width: 50rem;
     }
   }
 

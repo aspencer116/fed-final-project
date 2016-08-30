@@ -350,6 +350,7 @@
     </svg>
   </section>
   <div class="c-about__space"></div>
+  <a name="products">
   <section class="c-products">
     <header class="c-products__hero">
       <h2 class="c-products__head">Our Products</h2>
@@ -460,25 +461,33 @@
       <img class="c-proof__logo" id="c-proof__logo--nyt" src="images/featured_nyt.png" alt="New York Times logo" />
     </div>
   </section>
-  <a name="buy">
+  <a name="buy" id="buy">
   <section class="c-buy">
       <h2 class="type__section-head">Bring A modern Eden into your&nbsp;world</h2>
       <p class="c-buy__type">A Modern Eden products are currently exclusively sold online at Blick. However, if you would like to become an exclusive retailer, please let us&nbsp;know!</p>
       <a class="c-buy__button" href="#">Buy Now</a>
   </section>
-  <a name="sell">
+  <a name="sell" id="sell">
   <section class="c-sell u-clearfix">
     <h2 class="c-sell__header">Sell A Modern Eden</h2>
-    <p class="c-sell__type">Own a boutique or store and looking to sell products from A Modern Eden? Let us know and we will provide you with everything you need to know about becoming an exclusive vendor.</p>
-    <p class="c-sell__type">Have general quesitons about the A Modern Eden products, feel free to drop us a line.</p>
+    <p class="c-sell__type">Own a boutique or store and looking to sell products from A Modern Eden? Let us know and we will provide you with everything you need to know about becoming an exclusive&nbsp;vendor.</p>
+    <p class="c-sell__type">Have general quesitons about the A Modern Eden products, feel free to drop us a&nbsp;line.</p>
     <form class="c-sell__form u-clearfix" action="index.html" method="post">
       <label class="c-sell__label" for="name">name</label>
       <input class="c-sell__input" id="name" type="text" name="name" placeholder="Your name">
-      <label class="c-sell__label--alt" for="email">email</label>
-      <input class="c-sell__input--alt" id="email" type="email" name="email" value="" placeholder="Your email">
-      <textarea class="c-sell__input--text" name="message" rows="5" placeholder="I would like to learn more about how my business can c-sell A Modern Eden products."></textarea>
-      <button type="submit" value="submit" class="c-sell__submit">submit</button>
+      <label class="c-sell__label" for="email">email</label>
+      <input class="c-sell__input" id="email" type="email" name="email" value="" placeholder="Your email">
+      <textarea class="c-sell__input--text" name="message" rows="5" placeholder="I would like to learn more about how my business can sell A Modern Eden products."></textarea>
+      <a class="c-sell__submit" href="#modal">submit</a>
     </form>
+    <div id="modal" class="c-sell__modal--container">
+      <div class="c-sell__modal">
+        <a href="#!" class="c-sell__modal--x">X</a>
+        <img src="../images/owl_100.png" class="c-sell__modal--owl">
+        <p class="c-sell__modal--type">Thanks for contacting A Modern&nbsp;Eden! While we work to respond, feel free to take a look at our <a href="#products" class="c-sell__modal--link">beautiful&nbsp;products<a>.</p>
+      </div>
+      <a href="#!" class="c-sell__modal--close"></a>
+    </div>
   </section>
   <footer class="c-footer">
     <svg class="c-AMElogo__color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 387 71.9">
@@ -495,7 +504,6 @@
     <p class="c-footer__text">Designed and built by <a class="c-footer__link" href="http://seesparkbox.com">Sparkbox</a>
   </footer>
 </main>
-
 
     <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
     <script src="index.js"></script>
