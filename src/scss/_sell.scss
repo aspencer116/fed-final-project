@@ -187,6 +187,10 @@
     width: 90%;
     margin: 0 auto 2em;
 
+    @media (min-width: $bp-b) {
+      width: 70%;
+    }
+
     @media (min-width: $bp-e) {
       width: 60%;
       max-width: 800px;
