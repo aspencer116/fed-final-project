@@ -52,9 +52,14 @@
 
   &__text {
     @extend .type__p;
+    margin-top: 0.75em;
 
     @media (min-width: $bp-d) {
-      height: 6.25em; //patch fix. Need to use flexbox
+      height: 7.5em;
+    }
+
+    @media (min-width: $bp-f) {
+      height: 6.25em;
     }
   }
 

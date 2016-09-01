@@ -1,14 +1,18 @@
 .c-AMElogo__color {
   display: block;
+  height: 3em;
+  width: 12.5em; //for Android 4.1.2
   max-width: 12.5em;
   margin: 0 auto 1.5em;
 
   @media screen and (min-width: $bp-c) {
+    height: auto;
     max-width: 14em;
+    width: auto;
   }
 
   @media screen and (min-width: $bp-e) {
-    max-width: 18em;
+    max-width: 20em;
   }
 }
 
@@ -17,14 +21,23 @@
 .c-lion {
   background-image: none;
   width: 12.5em; //200px
+  height: 18em;
   position: absolute;
-  bottom: 4em; //if no javascript loads
+  bottom: 4em;
+  display: block;
+  left: 25%; //for browsers with no calc() support. Android 4.1.2
   left: calc(50% - 6.25em);
   z-index: 1;
 
   @media (min-width: $bp-e) {
     width: 18em;
+    bottom: 6em;
+    left: 50%; //for users with no calc() support
     left: calc(50% - 9em);
+  }
+
+  @media (min-width: $bp-f) {
+    width: 24em;
   }
 }
 
@@ -108,10 +121,15 @@
   position: absolute;
   bottom: 2em; //if no javascript loads
   z-index: 0;
+  left: 25%;
   left: calc(50% - 5em);
 
   @media (min-width: $bp-e) {
     transform: scale(1.2);
+  }
+
+  @media (min-width: $bp-f) {
+    transform: scale(1.5);
   }
 }
 
@@ -121,6 +139,14 @@
   z-index: 0;
   width: 1.125em;
   height: 0.9375em;
+
+  @media (min-width: $bp-e) {
+    transform: scale(1.5) translateY(-50px);
+  }
+
+  @media (min-width: $bp-f) {
+    transform: scale(1.75) translateY(-100px);
+  }
 }
 
 .c-lion__element--1 {
@@ -172,6 +198,7 @@
     width: 14em; //204px
     position: absolute;
     bottom: 6em;
+    left: 3.5%;
     left: calc(4.5% - 5.625em);
     z-index: 1;
   }
@@ -179,6 +206,10 @@
   @media (min-width: $bp-e) {
     width: 20em;
     bottom: 5.5em;
+  }
+
+  @media (min-width: $bp-f) {
+    width: 26em;
   }
 }
 
@@ -238,7 +269,7 @@
   animation: eyes 5s infinite ease-in-out;
 }
 
-@-webkit-keyframes wing--right {
+@keyframes wing--right {
   2% {
     transform: rotate(-7deg);
     transform-origin: top;
@@ -249,7 +280,7 @@
   }
 }
 
-@-webkit-keyframes wing--left {
+@keyframes wing--left {
   2% {
     transform: rotate(5deg);
     transform-origin: top;
@@ -260,7 +291,7 @@
   }
 }
 
-@-webkit-keyframes eyes {
+@keyframes eyes {
   2% {
     opacity: 0;
   }
@@ -279,13 +310,14 @@
     position: absolute;
     bottom: 14em; //if no javascript loads
     z-index: 0;
+    left: 4%;
     left: calc(5% - 5em);
     transform: rotate(30deg);
   }
 
   @media (min-width: $bp-e) {
     left: 2%;
-    transform: scale(1.2) rotate(30deg);
+    transform: scale(1.2) rotate(30deg) translateY(-70px);
   }
 }
 
@@ -299,6 +331,14 @@
     z-index: 0;
     width: 1.125em;
     height: 1.125em;
+  }
+
+  @media (min-width: $bp-e) {
+    transform: scale(1.5) translateY(-25px);
+  }
+
+  @media (min-width: $bp-f) {
+    transform: scale(1.75) translateY(-50px);
   }
 }
 
@@ -335,6 +375,7 @@
     width: 9.25em; //204px
     position: absolute;
     bottom: 12em;
+    left: 93%;
     left: calc(91.5% - 4.125em);
     z-index: 1;
   }
@@ -343,6 +384,10 @@
     width: 16em;
     left: 80.5%;
     bottom: 14em;
+  }
+
+  @media (min-width: $bp-f) {
+    width: 20em;
   }
 }
 
@@ -383,7 +428,7 @@
   animation: elephant--eyes 7.125s infinite ease-in-out;
 }
 
-@-webkit-keyframes headMove {
+@keyframes headMove {
   0% {
     transform: translateX(8px);
   }
@@ -397,7 +442,7 @@
   }
 }
 
-@-webkit-keyframes elephant--eyes {
+@keyframes elephant--eyes {
   13% {
     opacity: 0;
   }
@@ -421,7 +466,7 @@
   }
 
   @media (min-width: $bp-e) {
-    transform: scale(1.4) rotate(-20deg);
+    transform: scale(1.4) rotate(-20deg) translateY(-50px);
   }
 }
 
@@ -436,6 +481,14 @@
     width: 1.125em;
     height: 1.125em;
     transform: rotate(45deg);
+  }
+
+  @media (min-width: $bp-e) {
+    transform: scale(1.5) translateY(-25px) rotate(45deg);
+  }
+
+  @media (min-width: $bp-f) {
+    transform: scale(1.75) translateY(-50px) rotate(45deg);
   }
 }
 

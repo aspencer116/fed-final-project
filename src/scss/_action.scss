@@ -34,50 +34,36 @@
     justify-content: center;
 
     //content unique to this instance of c-action__link
-    background-color: $orange;
+    background-color: darken($green-brand, 2%);
     color: $brown-brand;
 
     @media (min-width: $bp-d) {
       &:hover {
         height: 64px;
         height: 4rem;
-        background-color: lighten($orange, 5%);
+        background-color: darken($green-brand, 8%);
       }
 
       &:hover svg {
         top: 64px;
         top: 4rem;
-        fill: lighten($orange, 5%);
+        fill: darken($green-brand, 8%);
       }
     }
   }
 
   &__link--alt {
     @extend .c-action__link;
-    background-color: $brown-brand;
-    color: $brown-light;
-
-    @media (min-width: $bp-d) {
-      &:hover {
-        height: 64px;
-        height: 4rem;
-        background-color: darken($brown-brand, 5%);
-      }
-
-      &:hover svg {
-        top: 64px;
-        top: 4rem;
-        fill: darken($brown-brand, 5%);
-      }
-    }
+    background-color: darken($green-brand, 5%);
   }
 
   &__arrow {
-    fill: $orange;
+    fill: darken($green-brand, 2%);
     width: 1.5em;
     position: absolute;
-    top: 52px;
-    top: 3.25rem;
+    top: 50px;
+    top: 3.125rem;
+    left: 45%; //for devices that do not support calc()
     left: calc(50% - 0.75em);
     transition: all 0.25s;
     transition-timing-function: ease-in-out;
@@ -85,7 +71,7 @@
 
   &__arrow--alt {
     @extend .c-action__arrow;
-    fill: $brown-brand;
+    fill: darken($green-brand, 5%);
   }
 
   &__top {

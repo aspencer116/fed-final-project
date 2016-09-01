@@ -155,6 +155,7 @@ $bp-detail: 75em; //1200px
       }
 
       &:hover + svg {
+        right: 100%; //for browsers with no calc() support
         right: calc(100% - 1.125em);
         transform: rotate(180deg);
       }

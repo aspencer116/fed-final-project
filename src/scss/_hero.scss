@@ -46,7 +46,7 @@
     }
 
     @media screen and (min-width: $bp-c) {
-      padding: 3em 8em;
+      padding: 4em 8em;
     }
 
     @media screen and (min-width: $bp-d) {
@@ -55,6 +55,10 @@
 
     &--jsload {
       padding-top: 2em;
+
+      @media (min-width: $bp-c) {
+        padding-top: 4em;
+      }
     }
   }
 }

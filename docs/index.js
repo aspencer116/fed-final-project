@@ -6,7 +6,7 @@ $(window).scroll(function() {
   var scroll_3 = scroll/3;
 
   $("#c-lion__back").css({
-    bottom: -10 + (scroll_1)
+    bottom: 0 + (scroll_1)
   });
   $(".c-lion__element--1").css({
     bottom: 72 + (scroll_2)
