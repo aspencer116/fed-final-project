@@ -21,6 +21,7 @@
 
   &__input {
     @extend .type__p--reverse;
+    line-height: 1em;
     display: block;
     box-sizing: border-box;
     margin-bottom: 1em;
@@ -63,6 +64,7 @@
 
   &__input--text {
     @extend .c-sell__input;
+    line-height: 1.5em;
 
     @media (min-width: $bp-b) {
       width: 100%;
@@ -71,6 +73,7 @@
 
   &__label {
     @extend .type__p--reverse;
+    line-height: 1.2em;
     text-align: center;
     display: block;
     box-sizing: border-box;

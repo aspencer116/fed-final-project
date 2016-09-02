@@ -1,20 +1,31 @@
 @font-face {
-  font-family: "Avenir Medium";
-  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
-  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"), url("../fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("../fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("../fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"), url("../fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg"); }
-
-@font-face {
   font-family: "Avenir Next Bold";
   src: url("../fonts/6ff8ab07-ccb4-4a91-8f0f-2bd4367902e8.eot?#iefix");
   src: url("../fonts/6ff8ab07-ccb4-4a91-8f0f-2bd4367902e8.eot?#iefix") format("eot"), url("../fonts/91799b0e-0ef8-446e-b274-5509412e1242.woff2") format("woff2"), url("../fonts/97fb5311-bdbd-46bc-bf69-3bcf8c744cda.woff") format("woff"), url("../fonts/88093bd3-b377-4278-8abe-8460dd24d0e8.ttf") format("truetype"), url("../fonts/0fde1539-69df-4e3d-83ef-ae23d10dd2a5.svg#0fde1539-69df-4e3d-83ef-ae23d10dd2a5") format("svg"); }
+
+@font-face {
+  font-family: "Avenir Roman";
+  src: url("../fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix");
+  src: url("../fonts/57bf7902-79ee-4b31-a327-1bbf59a3d155.eot?#iefix") format("eot"), url("../fonts/b290e775-e0f9-4980-914b-a4c32a5e3e36.woff2") format("woff2"), url("../fonts/4b978f72-bb48-46c3-909a-2a8cd2f8819c.woff") format("woff"), url("../fonts/9bdf0737-f98c-477a-9365-ffc41b9d1285.ttf") format("truetype"), url("../fonts/15281d0d-e3c2-46e1-94db-cb681e00bfaa.svg#15281d0d-e3c2-46e1-94db-cb681e00bfaa") format("svg"); }
+
+@font-face {
+  font-family: "Avenir Medium";
+  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix");
+  src: url("../fonts/e0542193-b2e6-4273-bc45-39d4dfd3c15b.eot?#iefix") format("eot"), url("../fonts/17b90ef5-b63f-457b-a981-503bb7afe3c0.woff2") format("woff2"), url("../fonts/c9aeeabd-dd65-491d-b4be-3e0db9ae47a0.woff") format("woff"), url("../fonts/25f994de-d13f-4a5d-a82b-bf925a1e054d.ttf") format("truetype"), url("../fonts/3604edbd-784e-4ca7-b978-18836469c62d.svg#3604edbd-784e-4ca7-b978-18836469c62d") format("svg"); }
 
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
   src: url("../fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix") format("eot"), url("../fonts/e0d6f852-5401-4bbf-9672-47a50c5c87c6.woff2") format("woff2"), url("../fonts/7fedd582-6ae3-4850-be2f-4acae2e74fa5.woff") format("woff"), url("../fonts/d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf") format("truetype"), url("../fonts/849e0009-7435-46a3-b88d-c41c3ff639d4.svg#849e0009-7435-46a3-b88d-c41c3ff639d4") format("svg"); }
 
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
 .type__hero, .type__section-head, .c-about__header, .c-products__head, .c-sell__header {
-  font-family: 'Bebas Neue', tahoma, arial, sans-serif;
+  font-family: "Bebas Neue", tahoma, arial, sans-serif;
   color: #4B3900;
   font-size: 1.5em;
   line-height: 1.125em;
@@ -30,7 +41,7 @@
       font-size: 3em; } }
 
 .type__link, .type__link--more, .type__link--product, .button, .c-sell__submit, .c-action__link, .c-action__link--alt, .c-buy__button {
-  font-family: 'Avenir Medium', "Avenir", helvetica, sans-serif;
+  font-family: "Avenir Medium", "Avenir", helvetica, sans-serif;
   font-size: 1em;
   text-decoration: none;
   margin: 0;
@@ -54,7 +65,7 @@
   text-align: center; }
 
 .type__product--head, .type__product, .c-product__header, .c-product__header--alt1, .c-product__header--alt2 {
-  font-family: 'Avenir Next Bold', "Avenir", helvetica, sans-serif;
+  font-family: "Avenir Next Bold", "Avenir", helvetica, sans-serif;
   font-size: 2em;
   margin: 0;
   color: #4B3900;
@@ -69,7 +80,7 @@
       font-size: 2em; } }
 
 .type__p, .type__p--large, .type__p--center, .c-products__sub-head, .c-about__text, .c-sell__modal--type, .c-sell__modal--x, .c-sell__type, .type__p--reverse, .c-proof__quote, .c-buy__type, .c-sell__input, .c-sell__input--text, .c-sell__label, .c-product__text, .c-product-alt__text, .c-proof__text, .c-footer__text {
-  font-family: 'Avenir Medium', "Avenir", helvetica, sans-serif;
+  font-family: "Avenir Roman", "Avenir", helvetica, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   color: #4B3900;
@@ -105,7 +116,7 @@
       font-size: 3.25em; } }
 
 .type__sub-section, .type__sub-section--center {
-  font-family: 'Bebas Neue', tahoma, arial, sans-serif;
+  font-family: "Bebas Neue", tahoma, arial, sans-serif;
   font-size: 1.125em;
   margin: 0;
   letter-spacing: 0.15625em;
@@ -313,9 +324,9 @@
   @media (min-width: 40em) {
     .c-owl {
       display: block;
-      width: 14em;
+      width: 10em;
       position: absolute;
-      bottom: 6em;
+      bottom: 14em;
       left: 3.5%;
       left: calc(4.5% - 5.625em);
       z-index: 1; } }
@@ -1296,20 +1307,7 @@
     margin: 0 auto; }
     @media (min-width: 40em) {
       .c-proof__featured {
-        width: 90%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
+        width: 80%; } }
     @media (min-width: 60em) {
       .c-proof__featured {
         width: 80%; } }
@@ -1321,7 +1319,8 @@
     margin: 2em auto; }
     @media (min-width: 40em) {
       .c-proof__logo {
-        float: left; } }
+        float: left;
+        margin: 0 auto; } }
   .c-proof__quote {
     background-color: #4B3900;
     box-sizing: border-box;
@@ -1368,16 +1367,17 @@
         margin-left: 18%; } }
 
 #c-proof__logo--how {
-  width: 25%;
-  max-width: 6em; }
+  width: 14%;
+  margin-top: 5.5%;
+  margin-right: 15%; }
 
 #c-proof__logo--scholastic {
-  width: 70%;
-  max-width: 14em; }
+  width: 32%;
+  margin-top: 8%;
+  margin-right: 15%; }
 
 #c-proof__logo--nyt {
-  width: 35%;
-  max-width: 10em; }
+  width: 24%; }
 
 .c-buy {
   background-color: #F26531;
@@ -1442,6 +1442,7 @@
     width: 90%;
     margin: 0 auto 1em; }
   .c-sell__input, .c-sell__input--text {
+    line-height: 1em;
     display: block;
     box-sizing: border-box;
     margin-bottom: 1em;
@@ -1471,10 +1472,13 @@
     color: white; }
   .c-sell__input:-ms-input-placeholder, .c-sell__input--text:-ms-input-placeholder {
     color: white; }
-  @media (min-width: 40em) {
-    .c-sell__input--text {
-      width: 100%; } }
+  .c-sell__input--text {
+    line-height: 1.5em; }
+    @media (min-width: 40em) {
+      .c-sell__input--text {
+        width: 100%; } }
   .c-sell__label {
+    line-height: 1.2em;
     text-align: center;
     display: block;
     box-sizing: border-box;
@@ -1572,7 +1576,9 @@
   padding: 5em 0 2em; }
   .c-footer__text {
     font-size: 0.75em;
-    text-align: center; }
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; }
   .c-footer__link {
     color: #4B3900;
     font-weight: 700; }

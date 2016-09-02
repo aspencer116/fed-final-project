@@ -6,6 +6,8 @@
     @extend .type__p;
     font-size: 0.75em;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
   }
 
   &__link {

@@ -61,7 +61,6 @@ $(document).ready(function(){
 
     // Variables
     var windowHeight = $(window).height();
-    console.log(windowHeight);
     var toggle = .80 * windowHeight;
 
     // When the document is scrolled 85%, toggle the classes
