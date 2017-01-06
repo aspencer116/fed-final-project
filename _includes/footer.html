@@ -1,0 +1,11 @@
+<footer class="footer">
+    <ul class="social">
+        {% for sites in site.social %}
+            {% if sites[0] == 'email' %}
+                <li><a href="mailto:{{ sites[1] }}">{{ sites[0] }}</a></li>
+            {% else %}
+                <li><a href="https://{{ sites[1] }}">{{ sites[0] }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</footer>

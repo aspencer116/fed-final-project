@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% include head.html %}
+
+<body class="{{ page.class }}">
+
+    <div class="column-left image" style="{% if page.image %} background-image:url('..{{ page.image }}');{% else %}background-image:url('../uploads/image.jpg');{% endif %}"></div>
+
+    <div class="column-right">
+
+        <div class="header">
+            <p class="header-left">{{ site.title }}</p>
+            <p class="header-right">{{ page.header }}</p>
+        </div>
+
+        <div class="content"> {{ content }} </div>
+
+        {% include footer.html %}
+
+    </div>
+
+</body>
+
+</html>

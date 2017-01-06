@@ -1,0 +1,36 @@
+.column-left {
+  float: left;
+  height: 100vh;
+  position: fixed;
+  width: 0%;
+
+  @media only screen and (min-width: 600px){
+      width: 25%;
+  }
+
+  @media only screen and (min-width: 1200px){
+      width: 50%;
+  }
+
+  &.image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.column-right {
+  float: right;
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  @media only screen and (min-width: 600px){
+      width: 75%;
+  }
+
+  @media only screen and (min-width: 1200px){
+      width: 50%;
+  }
+
+}

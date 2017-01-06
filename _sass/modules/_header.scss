@@ -1,0 +1,32 @@
+.header {
+  background: rgba(255,255,255,.95);
+  font-size: 12px;
+  @media only screen and (min-width: 600px) and (min-height: 750px){ left: 0; }
+  overflow: hidden;
+  padding-bottom: 55px;
+  padding-top: 55px;
+  position: relative;
+  @media only screen and (min-width: 600px) and (min-height: 750px){ position: absolute; }
+  text-transform: uppercase;
+  @media only screen and (min-width: 600px) and (min-height: 750px){ top: 0; }
+  width: 100%;
+  z-index: 1;
+
+  .header-left {
+    display: block;
+    @media only screen and (min-width: 600px) { float: left; }
+    font-weight: 700;
+    margin: 0;
+    padding-left: 60px;
+  }
+
+  .header-right {
+    color: #767676;
+    display: block;
+    @media only screen and (min-width: 600px) { float: right; }
+    font-weight: 700;
+    margin: 0;
+    padding-left: 60px;
+    @media only screen and (min-width: 600px) { padding-right: 60px; }
+  }
+}

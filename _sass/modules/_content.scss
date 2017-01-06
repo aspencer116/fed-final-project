@@ -1,0 +1,59 @@
+.content {
+  line-height: 2;
+  padding: 0 60px;
+
+  @media only screen and (min-width: 600px) and (max-height: 749px){
+    margin: 100px 0;
+    padding: 0 13%;
+  }
+  @media only screen and (min-width: 600px) and (min-height: 750px){
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-height: 100vh;
+    padding: 130px 13%; // the 130 is the height of the header/footer
+    position: relative;
+    overflow: scroll;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  @media only screen and (min-width: 600px) {
+    
+  }
+  
+  // Accounting for the wysiwyg things
+  a {
+    color:#2eb993;
+    text-decoration:none;
+  }
+  h1 {
+  
+  }
+  h2 {
+  
+  }
+  h3 {
+  
+  }
+  blockquote {
+    border-left: 3px solid #ccc;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  img {
+    max-width: 100%;
+  }
+
+  &:before,
+  &:after {
+    background: #000;
+    content: '';
+    display: block;
+    height: 1px;
+    margin: 50px 0;
+    @media only screen and (min-width: 600px){ margin: 50px auto; }
+    width: 40px;
+  }
+}

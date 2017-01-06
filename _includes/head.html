@@ -1,0 +1,50 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+    <title>{{ site.title }} - {{ page.header }}</title>
+
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?bust={{ site.time | date: '%s' }}">
+
+    <!-- Canonical Meta -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Viewport Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta -->
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="robots" content="index,follow">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+
+    <!-- Facebook -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:image" content="http://{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/uploads/image.png{% endif %}" />
+
+    <!-- Fonts -->
+    {% if site.font %}
+        {{ site.font }}
+    {% else %}
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    {% endif %}
+
+    {% if site.font_style %}
+        <style type="text/css">
+            {{ site.font_style }}
+        </style>
+    {% else %}
+        <style type="text/css">
+            body { font-family: 'Open Sans', sans-serif; }
+        </style>
+    {% endif %}
+
+</head>
